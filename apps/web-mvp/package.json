@@ -15,8 +15,9 @@
   "devDependencies": {
     "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "tailwindcss": "^3",
+    "@types/react": "^19",
+    "tailwindcss": "^4",
+    "@tailwindcss/postcss": "^4",
     "postcss": "^8"
   }
 }
