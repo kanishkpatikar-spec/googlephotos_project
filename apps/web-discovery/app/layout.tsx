@@ -9,6 +9,8 @@ export const metadata = {
   description: 'Understand why people fail to find photos they remember.',
 }
 
+export const dynamic = 'force-dynamic';
+
 export default async function RootLayout({
   children,
 }: {
