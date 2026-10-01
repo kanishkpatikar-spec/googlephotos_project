@@ -1,0 +1,23 @@
+[
+  {
+    "id": "demo_ev_1",
+    "sourcePlatform": "reddit",
+    "rawStatement": "I spent 20 minutes looking for a picture of a receipt I took at a restaurant in Austin last year, but I couldn't remember the date or the name of the place, just that it had a yellow table.",
+    "isRetrievalRelated": true,
+    "dataMode": "demo"
+  },
+  {
+    "id": "demo_ev_2",
+    "sourcePlatform": "twitter",
+    "rawStatement": "Google photos search is so frustrating sometimes. I know I have a screenshot of a book recommendation, but searching 'book' or 'text' brings up thousands of things.",
+    "isRetrievalRelated": true,
+    "dataMode": "demo"
+  },
+  {
+    "id": "demo_ev_3",
+    "sourcePlatform": "app_store",
+    "rawStatement": "I wish I could search by feelings. I have a photo from a rainy day where I felt super cozy and drinking tea, but searching 'tea' doesn't find it.",
+    "isRetrievalRelated": true,
+    "dataMode": "demo"
+  }
+]

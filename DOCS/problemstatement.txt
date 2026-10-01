@@ -1,0 +1,1955 @@
+# GOOGLE PHOTOS CORE EXPERIENCE — AI-NATIVE PRODUCT PROJECT
+
+## SOURCE OF TRUTH
+
+The following project has been assigned by reviewers.
+
+Treat the reviewer-provided problem statement as the absolute source of truth.
+
+Do NOT reinterpret the problem into a generic photo-search project.
+
+Do NOT change the business goal.
+
+Do NOT narrow or expand the assignment without evidence.
+
+Do NOT fabricate research, interviews, user quotes, survey responses, usability-test results, metrics, or conclusions.
+
+The final project must directly address every requirement in the reviewer brief:
+
+1. Build an AI-powered discovery engine
+2. Break down the business metric
+3. Validate the opportunity through 5–6 user interviews
+4. Define the problem
+5. Build a functional AI-native MVP
+6. Test the MVP with at least 3 users
+7. Define success metrics
+8. Identify risks and mitigation steps
+
+The product context is Google Photos Core Experience.
+
+The strategic business goal is:
+
+**Increase the percentage of users who successfully retrieve a photo they remember but cannot precisely describe when they start searching.**
+
+This project is specifically about retrieval when memory is incomplete.
+
+It is NOT about improving Google Photos search in general.
+
+---
+
+# 1. PROJECT OBJECTIVE
+
+Build a complete end-to-end product case study and functional prototype that investigates:
+
+**Why do users fail to retrieve a photo that they know exists when they remember something about it but cannot precisely describe it?**
+
+The project must discover the answer through research rather than assuming it.
+
+The project should investigate situations such as:
+
+“That small café we went to during our Goa trip.”
+
+“The picture of the medicine I took when I was sick last year.”
+
+A user may remember that the photo exists but may not remember:
+
+* exact date
+* exact location
+* exact name
+* album
+* filename
+* exact searchable text
+* exact event
+* exact visual details
+
+The system should investigate what users actually remember instead.
+
+Possible remembered information might include:
+
+* rough time
+* people involved
+* trip or event
+* visual appearance
+* reason the photo was taken
+* something that happened around the photo
+* approximate place
+* object category
+* text fragment
+* emotion
+* purpose
+* sequence relative to another event
+* whether it was a screenshot/photo/document
+
+These are examples only.
+
+The research must determine the real patterns.
+
+---
+
+# 2. CORE BUILD PRINCIPLE
+
+Do not start with a solution.
+
+The required sequence is:
+
+Business Metric
+
+→ Metric Decomposition
+
+→ Secondary Research
+
+→ AI-Powered Discovery
+
+→ Opportunity Areas
+
+→ Primary User Research
+
+→ Observed User Behavior
+
+→ Root Cause
+
+→ Problem Definition
+
+→ MVP Hypothesis
+
+→ Functional MVP
+
+→ User Testing
+
+→ Success Metrics
+
+→ Risks / Next Iteration
+
+The implementation should visibly preserve this sequence.
+
+The final reviewer should be able to understand why the MVP exists based on the preceding evidence.
+
+---
+
+# 3. PRODUCT QUESTIONS THE PROJECT MUST ANSWER
+
+The research system should help answer questions such as:
+
+### Memory
+
+What do people remember about old visual information?
+
+What do they forget?
+
+Which clues remain strong after months or years?
+
+Do users remember:
+
+* who
+* where
+* why
+* approximately when
+* visual appearance
+* event context
+* surrounding activities
+* text
+* source
+* relationship to another memory?
+
+### Search Behavior
+
+What does the user type when they cannot remember the correct search term?
+
+Do they start broad?
+
+Do they change dates?
+
+Do they use people?
+
+Do they browse manually?
+
+Do they try multiple synonyms?
+
+Do they give up?
+
+### Failure
+
+Where does retrieval actually fail?
+
+Possibilities include:
+
+* user cannot express the memory
+* system misunderstands their clues
+* relevant photo never appears
+* relevant photo appears but is buried
+* user cannot recognize the correct result
+* user cannot refine the query
+* system treats uncertain information too literally
+* system cannot use contextual/relational clues
+
+Do not assume which one is dominant.
+
+### Workarounds
+
+What do users do when search fails?
+
+Examples may include:
+
+* manually scrolling timeline
+* browsing albums
+* searching locations
+* searching people
+* checking WhatsApp
+* asking another person
+* searching Google Maps
+* checking calendar
+* searching screenshots
+* trying multiple keywords
+* abandoning the task
+
+Again, discover rather than assume.
+
+---
+
+# 4. PART 1 — AI-POWERED DISCOVERY ENGINE
+
+Build an actual research-analysis system.
+
+This must be more sophisticated than:
+
+* sentiment analysis
+* keyword counts
+* positive/negative review classification
+* generic review summaries
+
+The system should extract structured evidence specifically about **photo retrieval behavior**.
+
+## 4.1 Sources
+
+Design the system to ingest evidence from public sources such as:
+
+* Google Play Store reviews
+* Apple App Store reviews
+* Reddit
+* Google Photos Community
+* Google support discussions
+* YouTube comments
+* public social media discussions
+* forums
+* public product discussions
+* other relevant publicly available conversations
+
+Where automatic collection is technically or legally difficult, support:
+
+* CSV import
+* JSON import
+* manual text input
+* URL + copied content input
+
+Do not make the entire project dependent on unstable scraping.
+
+---
+
+# 5. DISCOVERY ENGINE DATA SCHEMA
+
+For each relevant public statement, capture:
+
+```text
+Evidence ID
+
+Source platform
+
+Source URL
+
+Date
+
+Raw user statement
+
+Retrieval-related?
+Yes / No
+
+What was the user trying to find?
+
+Asset type:
+Photo
+Video
+Screenshot
+Document
+Receipt
+Medicine
+Place
+Person
+Food
+Other
+
+What did the user remember?
+
+What had the user forgotten?
+
+What information was uncertain?
+
+What query did the user attempt?
+
+What did the system apparently return?
+
+Where did retrieval fail?
+
+What did the user try next?
+
+Did the user eventually succeed?
+
+What workaround was used?
+
+What was the apparent user cost?
+Time
+Effort
+Frustration
+Abandonment
+No result
+
+Potential failure category
+
+Potential opportunity category
+
+Confidence in AI interpretation
+
+Human-reviewed?
+Yes / No
+```
+
+Always retain the original user text.
+
+AI-generated interpretations must never replace source evidence.
+
+---
+
+# 6. RESEARCH TAXONOMY
+
+Create editable taxonomies rather than hard-coded conclusions.
+
+## Possible remembered clue types
+
+* person
+* object
+* general location
+* exact location
+* approximate time
+* exact time
+* trip
+* event
+* activity
+* appearance
+* color
+* environment
+* text fragment
+* purpose
+* source
+* relationship
+* social context
+* before/after event
+* screenshot context
+* emotional context
+* document type
+
+## Possible forgotten information
+
+* exact date
+* exact place
+* name
+* text
+* filename
+* album
+* person
+* event
+* year
+* source
+
+## Possible retrieval failure points
+
+* memory articulation failure
+* query formulation failure
+* intent-understanding failure
+* semantic matching failure
+* metadata failure
+* ranking failure
+* candidate overload
+* recognition failure
+* refinement failure
+* browsing burden
+* abandonment
+
+These categories are starting points only.
+
+The system should allow new themes to emerge.
+
+---
+
+# 7. DISCOVERY ENGINE PIPELINE
+
+Design the AI workflow approximately as:
+
+```text
+Public user evidence
+        ↓
+Ingestion
+        ↓
+Cleaning / normalization
+        ↓
+Duplicate detection
+        ↓
+Retrieval-relevance classification
+        ↓
+LLM structured extraction
+        ↓
+Embedding generation
+        ↓
+Semantic clustering
+        ↓
+Theme detection
+        ↓
+Failure-stage classification
+        ↓
+Memory-cue analysis
+        ↓
+Opportunity generation
+        ↓
+Evidence-backed comparison
+        ↓
+Human review
+```
+
+Use RAG or equivalent evidence retrieval so that generated conclusions can be traced back to original source records.
+
+Every important insight should be clickable to reveal supporting evidence.
+
+---
+
+# 8. RESEARCH DASHBOARD
+
+Build a dashboard containing at least:
+
+## Overview
+
+Show:
+
+* number of public evidence items
+* number relevant to vague retrieval
+* distribution by source
+* common asset types
+* common remembered clues
+* common forgotten information
+* common retrieval failure stages
+* common workarounds
+
+## Evidence Explorer
+
+Filters:
+
+* source
+* asset type
+* remembered clue
+* forgotten clue
+* failure stage
+* workaround
+* success/failure
+* confidence
+
+Show the original evidence alongside AI interpretation.
+
+## Memory Analysis
+
+Visualize:
+
+**What users remember vs. what they forget.**
+
+Do not infer exact percentages unless the dataset supports them.
+
+## Retrieval Failure Funnel / Map
+
+Visualize something like:
+
+```text
+User remembers photo exists
+        ↓
+Attempts to express memory
+        ↓
+Creates search query
+        ↓
+System interprets query
+        ↓
+Candidate photos retrieved
+        ↓
+User evaluates candidates
+        ↓
+User refines or browses
+        ↓
+Target found / abandoned
+```
+
+Use the evidence to identify where failures occur.
+
+## Opportunity Explorer
+
+Allow multiple opportunity areas to be compared.
+
+Do NOT automatically select a winner solely using AI.
+
+Show the evidence supporting each opportunity.
+
+---
+
+# 9. PART 2 — BUSINESS METRIC DECOMPOSITION
+
+Start with the exact business metric:
+
+**Successful retrieval of vaguely remembered photos**
+
+Build a metric tree.
+
+Do not assume retrieval success depends only on search relevance.
+
+Investigate the full behavior chain.
+
+A useful starting decomposition is:
+
+```text
+Successful Vague Retrieval
+│
+├── User can express remembered information
+│
+├── Product understands remembered information
+│
+├── Relevant candidates are retrieved
+│
+├── Relevant candidates are ranked appropriately
+│
+├── User can evaluate / recognize candidates
+│
+├── User can refine after failure
+│
+└── User eventually identifies intended photo
+```
+
+This is a starting framework.
+
+Research may modify it.
+
+---
+
+# 10. DEFINE RETRIEVAL SESSION
+
+For this project, create an operational definition.
+
+A **vague-memory retrieval session** occurs when:
+
+1. The user believes a specific visual asset exists.
+2. The user wants to retrieve it.
+3. At the beginning of the task, the user lacks enough precise information to identify it directly.
+
+A successful retrieval occurs when the intended target asset is found.
+
+For controlled testing, each task should have a known target image where possible.
+
+---
+
+# 11. METRICS FOR EACH STAGE
+
+Potential diagnostic metrics:
+
+### Query Formation
+
+* time to first query
+* number of clues expressed
+* query length
+* uncertainty expressed
+* number of reformulations
+
+### Understanding
+
+* extracted clue accuracy
+* incorrect interpretation rate
+* unresolved clue rate
+
+### Candidate Retrieval
+
+* target Recall@5
+* target Recall@10
+* target Recall@20
+* target rank
+
+### Candidate Evaluation
+
+* number of candidates inspected
+* time spent evaluating candidates
+* target recognition rate
+
+### Refinement
+
+* refinement attempts
+* successful refinement percentage
+* rank improvement after refinement
+* abandonment after failed attempt
+
+### Final Outcome
+
+* retrieval success rate
+* time to retrieve
+* number of interactions
+* abandonment rate
+
+Do not finalize the metric framework before the MVP is determined.
+
+---
+
+# 12. PART 3 — PRIMARY USER RESEARCH
+
+The assignment requires interviews with **5–6 actual users**.
+
+Do not fabricate participants.
+
+Do not generate fake quotes.
+
+Do not create fake interview findings.
+
+The product should instead provide a research workspace where real interviews can be stored and analyzed.
+
+---
+
+# 13. TARGET PARTICIPANT RECRUITMENT
+
+The final target segment should be chosen based on research.
+
+A reasonable initial recruiting criterion is users who:
+
+* have used a photo-management app for several years
+* have accumulated a large visual library
+* have attempted to find old photos/screenshots/documents
+* have experienced difficulty retrieving something they knew existed
+
+Do not over-segment initially without evidence.
+
+---
+
+# 14. INTERVIEW METHODOLOGY
+
+Use a combination of:
+
+**Critical Incident Technique**
+
+plus
+
+**Contextual Inquiry / Retrieval Task**
+
+The interview should focus on actual past behavior rather than hypothetical feature preferences.
+
+Ask participants to recall a real incident.
+
+Examples:
+
+“What was the last photo you remember trying to find but had difficulty finding?”
+
+“What did you remember about it before you started searching?”
+
+“What didn't you remember?”
+
+“What did you type first?”
+
+“Why did you type that?”
+
+“What appeared?”
+
+“What did you do next?”
+
+“What other clues did you try?”
+
+“Did seeing results remind you of anything?”
+
+“Did you eventually find the photo?”
+
+“How?”
+
+“How long did it roughly take?”
+
+“What would you normally do if search failed?”
+
+Where possible:
+
+Ask the user to recreate the retrieval task inside their actual photo application.
+
+Observe their behavior.
+
+Do not lead them toward the MVP concept.
+
+---
+
+# 15. INTERVIEW REPOSITORY
+
+Build a module for adding:
+
+* participant ID
+* participant segment information
+* interview date
+* transcript
+* notes
+* retrieval incident
+* target asset
+* initial memory
+* query sequence
+* observed behavior
+* workaround
+* outcome
+* quotes
+
+Use AI to assist coding and synthesis.
+
+Clearly distinguish:
+
+**Direct Quote**
+
+from
+
+**Researcher Observation**
+
+from
+
+**AI Interpretation**
+
+from
+
+**Hypothesis**
+
+---
+
+# 16. CROSS-INTERVIEW ANALYSIS
+
+Once real interview data is entered, automatically help identify:
+
+* repeated remembered cues
+* repeated forgotten attributes
+* repeated search behaviors
+* repeated failure stages
+* repeated workarounds
+* moments users remembered additional information
+* abandonment patterns
+* differences between participants
+
+Create a synthesis page.
+
+Do not claim generalizability from 5–6 interviews.
+
+Use qualitative findings appropriately.
+
+---
+
+# 17. PART 4 — PROBLEM DEFINITION
+
+Only after secondary and primary research, generate the final problem definition.
+
+It must answer:
+
+### Target User Segment
+
+Who specifically experiences the problem?
+
+### Retrieval Scenario
+
+Under what circumstances are they searching?
+
+### Product Outcome
+
+What behavior/outcome should improve?
+
+### Root Cause
+
+Why does retrieval fail even though the user retains some memory?
+
+### Existing Workaround
+
+What does the user currently do?
+
+### User Value
+
+Why does successful retrieval matter?
+
+### Business Value
+
+Why is improving this useful for Google Photos?
+
+### Evidence
+
+Which secondary and primary research observations support the conclusion?
+
+---
+
+# 18. PROBLEM DEFINITION TEMPLATE
+
+Use this structure once evidence is available:
+
+```text
+For [target segment],
+
+when they are trying to retrieve [specific type/scenario of remembered visual asset],
+
+they often remember [specific types of memory cues]
+
+but have forgotten [specific searchable attributes].
+
+Because [validated root cause],
+
+their initial retrieval attempt results in [observed failure behavior].
+
+Users then resort to [observed workaround],
+
+creating [time/effort/friction/consequence].
+
+Improving [specific product behavior/outcome]
+
+should increase [relevant component of successful vague-memory retrieval].
+```
+
+Do not fill this with invented findings.
+
+---
+
+# 19. PART 5 — BUILD AN AI-NATIVE MVP
+
+The MVP must follow the final research finding.
+
+Do NOT assume from the beginning that the answer is:
+
+* chatbot
+* conversational search
+* vector search
+* visual search
+* timeline search
+* filters
+* photo assistant
+
+The research should determine where intelligence is actually required.
+
+However, architect the application flexibly enough that an AI-based retrieval experience can be built after research.
+
+---
+
+# 20. MVP MINIMUM REQUIREMENT
+
+The MVP must be functional.
+
+Another person should be able to:
+
+1. access the prototype
+2. use a representative photo library
+3. receive a retrieval task or choose a known target
+4. attempt retrieval
+5. interact with the AI functionality
+6. inspect results
+7. identify/select the target
+8. complete the retrieval task
+
+A static Figma-style interface alone is insufficient.
+
+---
+
+# 21. REPRESENTATIVE PHOTO LIBRARY
+
+Support a demo dataset.
+
+Include categories such as:
+
+* travel
+* restaurants
+* screenshots
+* medicines
+* receipts
+* documents
+* food
+* people
+* pets
+* events
+* landmarks
+* similar-looking photos
+* duplicate/near-duplicate photos
+
+Each test task should know the target asset ID internally.
+
+Example:
+
+```text
+Task:
+
+“Find the medicine photo you took when you were sick.”
+
+Ground-truth target:
+IMG_00482
+```
+
+The target ID should not be visible to the participant.
+
+---
+
+# 22. OPTIONAL USER PHOTO IMPORT
+
+If technically practical, support a private local upload mode.
+
+Users may upload a folder of images for testing.
+
+Privacy should be explicit.
+
+Do not require real Google Photos account integration for the MVP unless absolutely necessary.
+
+A representative local dataset is acceptable for demonstrating the core experience.
+
+---
+
+# 23. IMAGE INDEXING PIPELINE
+
+The prototype may need to derive:
+
+* file metadata
+* EXIF date
+* EXIF location
+* OCR
+* image embeddings
+* semantic caption
+* objects
+* scenes
+* text
+* document category
+
+Keep these as modular retrieval signals.
+
+Do not assume any single representation is enough.
+
+---
+
+# 24. POSSIBLE AI COMPONENTS
+
+Based on final research findings, the MVP may potentially use:
+
+* multimodal embeddings
+* semantic retrieval
+* OCR
+* LLM query interpretation
+* contextual reasoning
+* query expansion
+* conversational refinement
+* adaptive questioning
+* re-ranking
+* confidence estimation
+* candidate comparison
+* metadata reasoning
+* temporal reasoning
+* location reasoning
+* multimodal RAG
+
+Use only what the problem requires.
+
+---
+
+# 25. RETRIEVAL ENGINE ARCHITECTURE
+
+Use a hybrid architecture where appropriate.
+
+Potential retrieval pipeline:
+
+```text
+User memory/query
+        ↓
+Intent + clue extraction
+        ↓
+Query representation
+        ↓
+Candidate generation
+        ├── image embeddings
+        ├── semantic captions
+        ├── OCR
+        ├── metadata
+        ├── time
+        └── location
+        ↓
+Candidate fusion
+        ↓
+AI reranking
+        ↓
+Candidate presentation
+        ↓
+User interaction/refinement
+        ↓
+Updated retrieval
+```
+
+Do not implement components that are unnecessary for the validated problem.
+
+---
+
+# 26. UNCERTAINTY HANDLING
+
+Users may not be certain about what they remember.
+
+The product should therefore avoid treating every clue as absolute truth.
+
+Examples:
+
+“Maybe during 2022.”
+
+“I think Rahul was there.”
+
+“It may have been Goa.”
+
+Represent these differently from:
+
+“It was in Goa.”
+
+Allow retrieval logic to use soft confidence rather than hard filters when appropriate.
+
+---
+
+# 27. BASELINE EXPERIENCE
+
+Create a simple baseline so the MVP can be evaluated properly.
+
+Potential baseline:
+
+A normal semantic-search interface where the user enters a query and receives ranked results.
+
+Then compare the AI-native MVP against the baseline on the same retrieval tasks.
+
+The project must demonstrate whether the new intelligence improves retrieval behavior.
+
+---
+
+# 28. PART 6 — MVP USER TESTING
+
+Return to at least **3 users from the selected target segment**.
+
+Preferably use participants from the original interviews where possible.
+
+Do not fabricate test results.
+
+The application should provide a testing mode.
+
+---
+
+# 29. TESTING MODE
+
+For each retrieval task capture:
+
+```text
+Participant ID
+
+Task ID
+
+Target asset ID
+
+Initial memory/query
+
+Time started
+
+Results displayed
+
+Target rank
+
+User interactions
+
+Refinement attempts
+
+Search changes
+
+AI questions/responses if applicable
+
+Candidates opened
+
+Final selected asset
+
+Success / failure
+
+Time to target
+
+Total interactions
+
+User comments
+
+Researcher observations
+```
+
+---
+
+# 30. POST-TASK QUESTIONS
+
+After the participant finishes, ask questions such as:
+
+“What helped you most?”
+
+“What was confusing?”
+
+“Did the system ask anything unnecessary?”
+
+“Did anything shown by the system help you remember more?”
+
+“Did you trust the results?”
+
+“What would you change?”
+
+“How would you normally have tried to find this photo?”
+
+Again, store actual answers only.
+
+---
+
+# 31. EXPERIMENT COMPARISON
+
+Where feasible, compare:
+
+**Baseline retrieval**
+
+vs.
+
+**AI-native MVP retrieval**
+
+Measure:
+
+* success
+* time
+* query/refinement count
+* target rank
+* abandonment
+* subjective difficulty
+
+With a small sample, do not claim statistical significance.
+
+Present directional qualitative evidence honestly.
+
+---
+
+# 32. PART 7 — DEFINE SUCCESS
+
+The final metric framework must correspond to the actual MVP.
+
+Do not use generic metrics merely because they are easy to measure.
+
+Primary metric should relate directly to successful retrieval.
+
+Possible primary metric:
+
+**Vague-memory retrieval success rate**
+
+Potential leading metrics:
+
+* target Recall@K
+* time to target
+* target rank
+* successful refinement rate
+* interactions to target
+* percentage of users completing task
+* recovery rate after unsuccessful first attempt
+
+Potential diagnostics:
+
+* clue extraction accuracy
+* candidate quality
+* clarification response rate
+* search reformulation count
+* result inspection count
+* abandoned sessions
+* AI latency
+* retrieval latency
+
+Potential guardrails:
+
+* incorrect-result confidence
+* hallucination
+* sensitive-content exposure
+* privacy
+* cost per session
+* response latency
+
+Final selection must reflect the MVP actually built.
+
+---
+
+# 33. PART 8 — RISKS AND MITIGATION
+
+Create a risk register specific to the final solution.
+
+Consider at minimum:
+
+## Privacy
+
+Photo libraries are deeply personal.
+
+Mitigation could include:
+
+* local processing where practical
+* explicit consent
+* deletion controls
+* minimal retention
+* no training usage
+* clear data policy in prototype
+
+## Incorrect AI Interpretation
+
+The system might misunderstand partial memory.
+
+Mitigation:
+
+* editable assumptions
+* confidence representation
+* refinement
+* fallback retrieval
+
+## Hallucination
+
+LLMs may invent information that does not exist in the library.
+
+Mitigation:
+
+* ground generated responses in indexed assets
+* provenance
+* avoid unsupported claims
+
+## Retrieval Quality
+
+Relevant assets may never enter candidate pool.
+
+Mitigation:
+
+* hybrid retrieval
+* multiple retrieval signals
+* larger candidate generation before reranking
+
+## Latency
+
+Multimodal AI can be slow.
+
+Mitigation:
+
+* preprocess library
+* cache embeddings
+* asynchronous indexing
+* lightweight reranking where appropriate
+
+## Cost
+
+Multimodal models can be expensive.
+
+Mitigation:
+
+* preprocessing
+* embedding reuse
+* selective LLM calls
+* smaller models for classification
+
+## User Trust
+
+Users may not understand why photos are surfaced.
+
+Mitigation:
+
+* transparent reasoning where useful
+* clear controls
+* user correction
+
+## Research Bias
+
+Public complaints may over-represent unhappy users.
+
+Mitigation:
+
+* use multiple sources
+* validate with interviews
+* distinguish prevalence from severity
+
+## Interview Bias
+
+Users may poorly recall past retrieval behavior.
+
+Mitigation:
+
+* use real retrieval tasks
+* screen sharing / think-aloud where possible
+* Critical Incident Technique
+
+Add risks specific to the final MVP.
+
+---
+
+# 34. REQUIRED WEB APPLICATION
+
+Build one integrated project application.
+
+Recommended screens:
+
+### 1. Project Overview
+
+Show:
+
+* reviewer challenge
+* business goal
+* project stage
+* research status
+* selected opportunity
+* MVP status
+* test status
+
+### 2. Metric Tree
+
+Interactive decomposition of:
+
+Successful retrieval of vaguely remembered photos.
+
+### 3. Evidence Ingestion
+
+Allow:
+
+* pasted text
+* CSV
+* JSON
+* URLs
+* source metadata
+
+### 4. Discovery Dashboard
+
+Show secondary-research insights.
+
+### 5. Evidence Explorer
+
+Inspect individual pieces of evidence.
+
+### 6. Memory Cue Analysis
+
+What users remember vs forget.
+
+### 7. Retrieval Failure Map
+
+Show where failure occurs in the journey.
+
+### 8. Opportunity Areas
+
+Compare identified opportunity areas.
+
+### 9. User Interviews
+
+Store 5–6 real interviews.
+
+### 10. Research Synthesis
+
+Cross-participant findings.
+
+### 11. Problem Definition
+
+Show final research-backed problem.
+
+### 12. MVP
+
+Functional AI retrieval experience.
+
+### 13. User Testing
+
+Run structured retrieval tests.
+
+### 14. Results
+
+Compare retrieval behavior and outcomes.
+
+### 15. Metrics
+
+Success framework.
+
+### 16. Risks
+
+Risk and mitigation register.
+
+---
+
+# 35. EVIDENCE LABELING
+
+Throughout the interface, explicitly label information as:
+
+### EVIDENCE
+
+Something directly observed in source material or research.
+
+### OBSERVATION
+
+A repeated pattern seen in evidence.
+
+### HYPOTHESIS
+
+A possible explanation that has not yet been validated.
+
+### DECISION
+
+A product choice made based on available evidence.
+
+Never merge these categories.
+
+This is critical for reviewer credibility.
+
+---
+
+# 36. RESEARCH CONFIDENCE
+
+Where useful, indicate:
+
+High confidence
+
+Medium confidence
+
+Low confidence
+
+based on:
+
+* amount of evidence
+* source diversity
+* agreement between sources
+* support from primary research
+
+Do not pretend qualitative evidence provides population-level certainty.
+
+---
+
+# 37. TECHNOLOGY
+
+Recommended implementation:
+
+## Frontend
+
+Next.js
+TypeScript
+React
+Tailwind CSS
+
+## Backend
+
+Next.js API routes or FastAPI
+
+## Database
+
+PostgreSQL / Supabase
+
+For a lightweight local version:
+
+SQLite is acceptable.
+
+## Vector Search
+
+pgvector
+or Qdrant
+or Chroma
+
+## AI
+
+Create provider abstraction.
+
+Possible providers:
+
+Gemini
+OpenAI
+Anthropic
+
+Do not tightly couple the architecture to one provider if avoidable.
+
+## Image understanding
+
+Use a multimodal model and/or CLIP-style embeddings.
+
+## OCR
+
+Use a reliable OCR provider/library.
+
+---
+
+# 38. PROJECT STRUCTURE
+
+Use a clean architecture similar to:
+
+```text
+/app
+  /dashboard
+  /discovery
+  /evidence
+  /metrics
+  /research
+  /interviews
+  /opportunities
+  /problem
+  /mvp
+  /testing
+  /results
+  /risks
+
+/components
+
+/lib
+  /ai
+  /retrieval
+  /research
+  /embeddings
+  /analytics
+  /database
+
+/api
+
+/data
+  /seed
+  /demo-library
+
+/tests
+
+/docs
+```
+
+Adjust if technically justified.
+
+---
+
+# 39. DATABASE ENTITIES
+
+Design entities such as:
+
+```text
+EvidenceSource
+
+EvidenceItem
+
+MemoryCue
+
+FailureMode
+
+Opportunity
+
+Participant
+
+Interview
+
+InterviewObservation
+
+InterviewQuote
+
+ResearchFinding
+
+PhotoAsset
+
+PhotoMetadata
+
+PhotoEmbedding
+
+RetrievalTask
+
+RetrievalSession
+
+QueryTurn
+
+CandidateResult
+
+UserFeedback
+
+TestSession
+
+MetricEvent
+
+Risk
+```
+
+Use relational links so every insight can retain provenance.
+
+---
+
+# 40. AI SAFETY / DATA PRINCIPLES
+
+Never send private photos to an external API without clear user action.
+
+Do not persist uploaded personal photos unnecessarily.
+
+Do not expose API keys.
+
+Use:
+
+.env
+
+.env.example
+
+server-side secrets
+
+Provide delete/reset dataset functionality.
+
+---
+
+# 41. DEMO DATA
+
+Seed enough synthetic research and photo data for application development.
+
+But label development data clearly:
+
+**DEMO / SYNTHETIC DATA**
+
+Never display it as actual research.
+
+Once real secondary research is entered, clearly separate it from demo records.
+
+Once interviews are conducted, clearly separate real interviews from sample/template records.
+
+---
+
+# 42. DEVELOPMENT MODE
+
+The project should work even before all real research is completed.
+
+Implement:
+
+**Demo mode**
+
+using clearly labeled synthetic data.
+
+And:
+
+**Research mode**
+
+where actual evidence and interview data are used.
+
+This allows development without falsifying research.
+
+---
+
+# 43. ANALYTICS EVENTS
+
+Instrument relevant retrieval interactions.
+
+Possible events:
+
+```text
+retrieval_started
+
+query_submitted
+
+results_shown
+
+candidate_opened
+
+query_refined
+
+filter_applied
+
+ai_question_shown
+
+ai_question_answered
+
+target_selected
+
+retrieval_success
+
+retrieval_abandoned
+
+task_completed
+```
+
+Store:
+
+* anonymous session ID
+* task ID
+* timestamp
+* interaction number
+* result rank
+* latency
+
+Avoid storing unnecessary private content in analytics.
+
+---
+
+# 44. UX REQUIREMENTS
+
+The application should feel like a serious product research prototype.
+
+Prioritize:
+
+* clean layout
+* strong information hierarchy
+* restrained visual design
+* readable charts
+* easy evidence inspection
+* clear distinction between research and hypotheses
+* responsive interaction
+* useful empty states
+* clear error handling
+
+Avoid:
+
+* excessive gradients
+* random animations
+* decorative AI elements
+* fake statistics
+* meaningless dashboards
+* excessive cards with no analytical purpose
+
+---
+
+# 45. REVIEWER EXPERIENCE
+
+Design the project so a reviewer can understand it in this order:
+
+### Step 1
+
+Read the original challenge.
+
+### Step 2
+
+See how the business metric was decomposed.
+
+### Step 3
+
+See evidence collected by the AI discovery engine.
+
+### Step 4
+
+Understand different retrieval failure patterns.
+
+### Step 5
+
+See which opportunity was investigated with users.
+
+### Step 6
+
+Read findings from the 5–6 interviews.
+
+### Step 7
+
+Understand the final root cause.
+
+### Step 8
+
+See the problem definition.
+
+### Step 9
+
+Use the functional MVP.
+
+### Step 10
+
+See test results from at least 3 users.
+
+### Step 11
+
+Understand success metrics.
+
+### Step 12
+
+Understand risks and what should be built next.
+
+The reviewer should never need to guess how one stage led to another.
+
+---
+
+# 46. WHAT NOT TO DO
+
+Do NOT:
+
+* replace the reviewers' challenge with a new one
+* change the business metric
+* make “AI search” the predetermined solution
+* fabricate research
+* fabricate interview participants
+* fabricate quotes
+* fabricate user-test results
+* claim statistical significance from tiny samples
+* create only a static UI
+* create only an LLM chatbot
+* create only a semantic-search demo
+* focus only on sentiment
+* confuse retrieval relevance with retrieval success
+* optimize engagement instead of task completion
+* hide contradictory research
+* remove uncertainty from qualitative findings
+
+---
+
+# 47. REQUIRED FINAL OUTPUTS
+
+The repository should eventually contain:
+
+```text
+README.md
+
+PROJECT_BRIEF.md
+
+RESEARCH_METHOD.md
+
+DISCOVERY_ENGINE.md
+
+METRIC_TREE.md
+
+INTERVIEW_GUIDE.md
+
+RESEARCH_FINDINGS.md
+
+PROBLEM_DEFINITION.md
+
+MVP_HYPOTHESIS.md
+
+MVP_ARCHITECTURE.md
+
+USER_TEST_PLAN.md
+
+USER_TEST_RESULTS.md
+
+METRICS.md
+
+RISKS.md
+
+NEXT_ITERATION.md
+```
+
+Some documents must remain templates until real research is completed.
+
+Do not fill missing evidence with invented data.
+
+---
+
+# 48. README CONTENT
+
+README should include:
+
+* project overview
+* reviewer challenge
+* product objective
+* architecture diagram
+* technical stack
+* installation
+* environment variables
+* database setup
+* seed/demo data setup
+* AI provider configuration
+* running locally
+* research workflow
+* testing workflow
+* privacy notes
+* limitations
+
+---
+
+# 49. IMPLEMENTATION ORDER
+
+Build this project incrementally.
+
+## Phase 1 — Foundation
+
+Create:
+
+* application shell
+* database
+* navigation
+* project overview
+* metric-tree screen
+
+## Phase 2 — Discovery Engine
+
+Create:
+
+* evidence ingestion
+* AI classification
+* structured extraction
+* evidence explorer
+* clustering
+* insight dashboard
+* opportunity explorer
+
+## Phase 3 — Research
+
+Create:
+
+* participant management
+* interview template
+* transcript entry
+* AI-assisted coding
+* synthesis
+
+## Phase 4 — Problem Definition
+
+Create:
+
+* finding synthesis
+* evidence-backed problem-definition builder
+
+## Phase 5 — Retrieval Infrastructure
+
+Create:
+
+* image upload/demo library
+* metadata processing
+* OCR
+* embeddings
+* retrieval API
+
+## Phase 6 — MVP
+
+Implement the solution supported by the research.
+
+## Phase 7 — Testing
+
+Create:
+
+* retrieval test mode
+* task setup
+* event tracking
+* target success detection
+* post-test survey
+
+## Phase 8 — Results
+
+Create:
+
+* test results
+* success metrics
+* risks
+* iteration recommendations
+
+---
+
+# 50. IMPORTANT DEVELOPMENT RULE
+
+Before implementing a feature, ask:
+
+**Which requirement from the reviewer brief does this support?**
+
+If no clear answer exists, do not prioritize it.
+
+Before showing a research conclusion, ask:
+
+**What evidence supports this?**
+
+If none exists, label it a hypothesis.
+
+Before building an AI capability, ask:
+
+**Why is intelligence required here?**
+
+If deterministic software can solve it equally well, use deterministic software.
+
+Before reporting success, ask:
+
+**Did the user actually retrieve the intended target?**
+
+Do not use engagement as a substitute for retrieval success.
+
+---
+
+# 51. FIRST TASK FOR THE CODING AGENT
+
+Do NOT build the entire application immediately.
+
+First produce these artifacts:
+
+1. proposed system architecture
+2. database schema
+3. page/screen map
+4. research evidence schema
+5. AI discovery-engine pipeline
+6. metric-tree representation
+7. MVP architecture that remains solution-agnostic until research
+8. repository/file structure
+9. implementation phases
+10. dependencies
+11. environment variables
+12. development assumptions
+
+Then begin implementation.
+
+Do not ask unnecessary questions.
+
+When a reasonable technical choice is needed, make one, document it, and continue.
+
+Preserve every requirement from the reviewer brief.

@@ -1,0 +1,37 @@
+[
+  {
+    "source_platform": "twitter",
+    "author": "@tech_rant_daily",
+    "source_url": "https://x.com/tech_rant_daily/status/mock_tweet_1",
+    "published_at": "2026-09-18T10:05:00Z",
+    "raw_statement": "Can we talk about how Google Photos search has actually gotten WORSE? I used to be able to type 'receipts from Home Depot' and it would find them instantly using OCR. Now I get a grid of random home photos. @googlephotos what happened??"
+  },
+  {
+    "source_platform": "twitter",
+    "author": "@PhotoNerd99",
+    "source_url": "https://x.com/PhotoNerd99/status/mock_tweet_2",
+    "published_at": "2026-09-17T14:22:00Z",
+    "raw_statement": "Day 400 of asking @googlephotos to add a simple 'Sort by Size' or 'Find Duplicates' feature on the web app so I don't have to pay for Google One storage when half my cloud is just burst shots of my cat. 😭"
+  },
+  {
+    "source_platform": "twitter",
+    "author": "@UX_designer_Sarah",
+    "source_url": "https://x.com/UX_designer_Sarah/status/mock_tweet_3",
+    "published_at": "2026-09-16T09:15:00Z",
+    "raw_statement": "The lack of nested folders in Google Photos is a UI nightmare. If I have a '2023 Vacation' album, I should be able to put 'Paris', 'Rome', and 'London' inside it. Having 500 flat albums makes organizing completely pointless."
+  },
+  {
+    "source_platform": "twitter",
+    "author": "@DevopsDan",
+    "source_url": "https://x.com/DevopsDan/status/mock_tweet_4",
+    "published_at": "2026-09-15T18:40:00Z",
+    "raw_statement": "I love when Google Photos face recognition decides that my brother with a beard is an entirely different human being than my brother without a beard, and there's no fast way to merge their 400 photos together. So smart."
+  },
+  {
+    "source_platform": "twitter",
+    "author": "@MomLife101",
+    "source_url": "https://x.com/MomLife101/status/mock_tweet_5",
+    "published_at": "2026-09-14T11:05:00Z",
+    "raw_statement": "Why does searching for multiple people simultaneously literally never work? If I search for 'Lily and Jack', it just says no results. I KNOW I have a thousand pictures of my kids together. Make it make sense! 🤦‍♀️ #GooglePhotos"
+  }
+]

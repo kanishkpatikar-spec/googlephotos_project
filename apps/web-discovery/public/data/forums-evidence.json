@@ -1,0 +1,44 @@
+[
+  {
+    "source_platform": "forums",
+    "author": "Gold Product Expert - Platinum",
+    "source_url": "https://support.google.com/photos/thread/mock_thread_1",
+    "published_at": "2026-09-17T08:00:00Z",
+    "raw_statement": "To answer your question: No, currently there is no way to perform a boolean AND search (like 'John AND Mary AND Paris') natively in Google Photos. You have to search for one entity and manually scroll through to find the intersection. Many users have requested this feature."
+  },
+  {
+    "source_platform": "forums",
+    "author": "FrustratedUser88",
+    "source_url": "https://support.google.com/photos/thread/mock_thread_2",
+    "published_at": "2026-09-16T09:30:00Z",
+    "raw_statement": "I've carefully added descriptions to hundreds of old scanned family photos so I could find them later (e.g., 'Aunt Betty at 1985 Christmas'). When I type 'Betty 1985' into the search bar, nothing comes up. Why have a description field if the search engine doesn't even index it?"
+  },
+  {
+    "source_platform": "forums",
+    "author": "Archivist_Dave",
+    "source_url": "https://support.google.com/photos/thread/mock_thread_3",
+    "published_at": "2026-09-15T11:15:00Z",
+    "raw_statement": "Is there any hidden search operator to find photos that are NOT assigned to an album? I want to clean up my library but I have no idea which photos I've already sorted and which are just sitting in the main timeline."
+  },
+  {
+    "source_platform": "forums",
+    "author": "Silver Expert - Help Community",
+    "source_url": "https://support.google.com/photos/thread/mock_thread_4",
+    "published_at": "2026-09-14T14:45:00Z",
+    "raw_statement": "Unfortunately, the OCR (Optical Character Recognition) feature in Google Photos prioritizes clearly printed text like receipts or signs. Handwritten notes or text in videos is rarely indexed successfully. You can submit feedback through the app."
+  },
+  {
+    "source_platform": "forums",
+    "author": "PhotoHoarder",
+    "source_url": "https://support.google.com/photos/thread/mock_thread_5",
+    "published_at": "2026-09-13T16:20:00Z",
+    "raw_statement": "Face grouping completely split my son into three different 'people' as he aged from a baby to a toddler. I tried to merge them, but now searching his name only pulls up the baby photos. The index seems completely broken after a merge."
+  },
+  {
+    "source_platform": "forums",
+    "author": "StorageLimitHit",
+    "source_url": "https://support.google.com/photos/thread/mock_thread_6",
+    "published_at": "2026-09-12T19:10:00Z",
+    "raw_statement": "I am trying to free up space. Is there a search filter like 'size:>10mb' or 'type:video'? The storage manager only shows a tiny subset of large files and I can't do a comprehensive audit of my library."
+  }
+]

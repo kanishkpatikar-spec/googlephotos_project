@@ -1,0 +1,12 @@
+{
+  "name": "google-photos-retrieval-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "app-store-scraper": "^0.18.0",
+    "pg": "^8.23.0"
+  }
+}

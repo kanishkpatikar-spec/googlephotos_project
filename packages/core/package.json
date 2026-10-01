@@ -1,0 +1,13 @@
+{
+  "name": "@google-photos/core",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@google/genai": "*",
+    "@google-photos/db": "*",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

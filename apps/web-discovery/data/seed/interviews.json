@@ -1,0 +1,20 @@
+[
+  {
+    "id": "demo_interview_1",
+    "alias": "Participant A",
+    "segment": "Frequent traveler",
+    "retrievalIncident": "Tried to find a picture of a funny street sign in Tokyo.",
+    "initialMemory": "I remember it was raining and the sign was blue.",
+    "outcome": "Failed to find the photo after 5 minutes of scrolling.",
+    "dataMode": "demo"
+  },
+  {
+    "id": "demo_interview_2",
+    "alias": "Participant B",
+    "segment": "Parent",
+    "retrievalIncident": "Wanted to show a friend a craft project the kids did.",
+    "initialMemory": "It was made of popsicle sticks and yarn, probably last summer.",
+    "outcome": "Found it using location search 'home' and scrolling to July.",
+    "dataMode": "demo"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "id": "root",
+  "label": "Successful Vague Retrieval",
+  "description": "Increase the percentage of users who successfully retrieve a photo they remember but cannot precisely describe",
+  "isExpanded": true,
+  "isValidated": false,
+  "children": [
+    {
+      "id": "node-1",
+      "label": "User can express remembered information",
+      "description": "Can the user articulate what they recall about the photo?",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    },
+    {
+      "id": "node-2",
+      "label": "Product understands remembered information",
+      "description": "Can the system interpret vague, uncertain, or partial clues?",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    },
+    {
+      "id": "node-3",
+      "label": "Relevant candidates are retrieved",
+      "description": "Does the retrieval pipeline surface the target asset?",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    },
+    {
+      "id": "node-4",
+      "label": "Relevant candidates are ranked appropriately",
+      "description": "Is the target asset positioned prominently in results?",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    },
+    {
+      "id": "node-5",
+      "label": "User can evaluate / recognize candidates",
+      "description": "Can the user identify the correct photo among results?",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    },
+    {
+      "id": "node-6",
+      "label": "User can refine after failure",
+      "description": "Can the user successfully narrow down results after initial failure?",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    },
+    {
+      "id": "node-7",
+      "label": "User eventually identifies intended photo",
+      "description": "End-to-end success: the user finds the photo they were looking for",
+      "isExpanded": true,
+      "isValidated": false,
+      "children": []
+    }
+  ]
+}

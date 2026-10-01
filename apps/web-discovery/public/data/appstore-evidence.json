@@ -1,0 +1,44 @@
+[
+  {
+    "source_platform": "appstore",
+    "author": "iOSPhotoUser99",
+    "source_url": "https://apps.apple.com/us/app/google-photos/id962114608",
+    "published_at": "2026-09-17T00:00:00Z",
+    "raw_statement": "The search functionality used to be magic, now it's incredibly frustrating. I search for 'dog in park' and get random screenshots of texts. Please fix the AI search, it's a huge downgrade."
+  },
+  {
+    "source_platform": "appstore",
+    "author": "memory_keeper22",
+    "source_url": "https://apps.apple.com/us/app/google-photos/id962114608",
+    "published_at": "2026-09-16T00:00:00Z",
+    "raw_statement": "I've been typing descriptions and captions manually on my iPhone for years so I can find old receipts and documents. As of the last update, searching those captions returns literally 0 results. All that time wasted."
+  },
+  {
+    "source_platform": "appstore",
+    "author": "FamilyGuy1980",
+    "source_url": "https://apps.apple.com/us/app/google-photos/id962114608",
+    "published_at": "2026-09-15T00:00:00Z",
+    "raw_statement": "Why can I no longer search for two people at once? I type 'Mom and Dad' and it just says 'No results found'. It used to pull up every picture of them together. Did they intentionally break the face grouping?"
+  },
+  {
+    "source_platform": "appstore",
+    "author": "StudentLife44",
+    "source_url": "https://apps.apple.com/us/app/google-photos/id962114608",
+    "published_at": "2026-09-10T00:00:00Z",
+    "raw_statement": "Text recognition (OCR) inside images is totally broken. I take pictures of my lecture slides to search the text later. 'Photos' can't find anything anymore unless the text is massive and perfectly clear."
+  },
+  {
+    "source_platform": "appstore",
+    "author": "TravelBug_Sam",
+    "source_url": "https://apps.apple.com/us/app/google-photos/id962114608",
+    "published_at": "2026-09-08T00:00:00Z",
+    "raw_statement": "I just want to find all photos that are NOT in an album yet so I can organize them. There is literally no way to do this. A simple 'is:unorganized' filter would save me hours."
+  },
+  {
+    "source_platform": "appstore",
+    "author": "PixelConvert1",
+    "source_url": "https://apps.apple.com/us/app/google-photos/id962114608",
+    "published_at": "2026-09-01T00:00:00Z",
+    "raw_statement": "Every time I search for a location like 'Paris', it misses half the photos. I literally have the location tagged manually in the EXIF data but Google Photos ignores it and only uses its own AI guesses for location."
+  }
+]

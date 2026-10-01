@@ -1,0 +1,20 @@
+[
+  {
+    "id": "risk_1",
+    "category": "technical",
+    "description": "LLM hallucinations during evidence extraction might fabricate memory clues.",
+    "severity": "high",
+    "likelihood": "medium",
+    "mitigation": "Enforce strict Zod schemas and use low temperature. Preserve raw quotes alongside extractions.",
+    "status": "identified"
+  },
+  {
+    "id": "risk_2",
+    "category": "product",
+    "description": "MVP solution might focus on text search but users actually search by color or layout.",
+    "severity": "critical",
+    "likelihood": "low",
+    "mitigation": "Phase 2 Discovery and Phase 3 Research must specifically validate the visual vs semantic nature of vague memories before Phase 6 MVP.",
+    "status": "identified"
+  }
+]

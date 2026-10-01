@@ -1,0 +1,14 @@
+{
+  "name": "@google-photos/db",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "drizzle-orm": "^0.39.0",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.0",
+    "@types/pg": "^8.11.0",
+    "typescript": "^5"
+  }
+}

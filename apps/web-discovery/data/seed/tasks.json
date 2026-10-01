@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demo_task_1",
+    "description": "Find the photo of the blue street sign in Tokyo.",
+    "difficulty": "medium",
+    "dataMode": "demo"
+  },
+  {
+    "id": "demo_task_2",
+    "description": "Find the screenshot of the book recommendation.",
+    "difficulty": "hard",
+    "dataMode": "demo"
+  }
+]
