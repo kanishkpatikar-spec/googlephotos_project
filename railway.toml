@@ -1,11 +1,7 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "rm -f package-lock.json && npm install && npm run build --workspace=apps/web-mvp"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "npm run start --workspace=apps/web-mvp"
 healthcheckPath = "/"
 healthcheckTimeout = 100
-
-[build.env]
-NIXPACKS_NODE_VERSION = "20"
