@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "npm install && npm run build --workspace=apps/web-mvp"
+buildCommand = "rm -f package-lock.json && npm install && npm run build --workspace=apps/web-mvp"
 
 [deploy]
 startCommand = "npm run start --workspace=apps/web-mvp"
