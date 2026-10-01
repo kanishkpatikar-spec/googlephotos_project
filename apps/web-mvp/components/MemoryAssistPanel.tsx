@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NegativeConstraintInput } from './NegativeConstraintInput';
 
 interface Props {
-  onSearch: (payload: { before: string; after: string; query: string; notConstraints: string[] }) => void;
+  onSearch: (payload: { before: string; after: string; query: string; notConstraints: string[] }) => Promise<void>;
   isLoading: boolean;
 }
 
@@ -15,8 +15,8 @@ export function MemoryAssistPanel({ onSearch, isLoading }: Props) {
   const [after, setAfter] = useState("");
   const [notConstraints, setNotConstraints] = useState<string[]>([]);
 
-  const handleSearch = () => {
-    onSearch({ before, after, query: target, notConstraints });
+  const handleSearch = async () => {
+    await onSearch({ before, after, query: target, notConstraints });
     setIsExpanded(false);
   };
 

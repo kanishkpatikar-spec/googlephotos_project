@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
 
 import { VISUAL_POOLS } from "../lib/visual-pools";
 import { mockDatabase } from "../lib/mock-database";
@@ -415,8 +416,7 @@ type UserAlbum = {
                         {results.map((result, idx) => (
                             <div key={result.id} className="flex flex-col gap-6">
                                 <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img alt="" src={result.highResUrl || result.filepath} className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                                    <Image alt="" src={result.highResUrl || result.filepath} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-700 hover:scale-105" />
                                 </div>
                                 <div className="pl-6 border-l-2 border-primary/30 py-2">
                                     <p className="text-xl text-white/90 font-serif leading-relaxed italic">&quot;{narratives[idx] || (result.semanticCaption as string)}&quot;</p>
@@ -456,8 +456,7 @@ type UserAlbum = {
                                     className="group bg-surface-container-low rounded-xl p-space-sm transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 shadow-2xl flex flex-col justify-between cursor-pointer border border-outline-variant/20 hover:border-primary/50 relative"
                                 >
                                     <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img fetchPriority="high" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt={result.semanticCaption as string} src={result.filepath as string} alt={result.semanticCaption as string || ""} />
+                                        <Image fetchPriority="high" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt={result.semanticCaption as string} src={result.filepath as string} alt={result.semanticCaption as string || "Memory"} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                         
                                         {isTopSearchActive && result.matchReasons && (
                                             <CandidateExplanation 
