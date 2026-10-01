@@ -3,6 +3,8 @@ import { sql, eq } from "drizzle-orm";
 import { Suspense } from "react";
 import { RunPipelineButton } from "@/components/RunPipelineButton";
 
+export const dynamic = 'force-dynamic';
+
 // Server Action to fetch metrics
 async function fetchMetrics() {
   const [totalRes, relevantRes, sourcesRes, modesRes] = await Promise.all([
