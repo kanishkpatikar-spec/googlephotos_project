@@ -269,7 +269,7 @@ type UserAlbum = {
       </div>
       
       {/*  Main Layout with Sidebar  */}
-      <div className="max-w-[1800px] mx-auto w-full h-screen overflow-hidden flex">
+      <div className="max-w-[1800px] mx-auto w-full h-[calc(100vh-4rem)] overflow-hidden flex">
           
         {/* Sidebar */}
         <aside className="w-[220px] shrink-0 h-full border-r border-white/5 py-8 flex flex-col gap-8 hidden md:flex overflow-y-auto px-4 z-50">

@@ -8,7 +8,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || "dummy_key_for_build
 // ── EXPANDED TAXONOMY ──────────────────────────────────────────
 // Covers all 12 episodes' vocabulary for synonym expansion.
 const TAXONOMY: Record<string, string[]> = {
-    building: ["building", "buildings", "architecture", "architectural", "city building", "urban building", "structure", "cityscape", "landmark", "facade", "skyscraper"],
+    building: ["building", "buildings", "architecture", "architectural", "city building", "urban building", "structure", "cityscape", "facade", "skyscraper"],
     cafe: ["cafe", "café", "coffee shop", "coffeehouse", "coffee", "latte", "espresso", "barista"],
     restaurant: ["restaurant", "dinner", "dining", "eatery", "food", "meal", "supper"],
     beach: ["beach", "coast", "coastal", "seaside", "shore", "ocean", "sand", "waves"],

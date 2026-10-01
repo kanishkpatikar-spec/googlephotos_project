@@ -148,61 +148,52 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://upload.wikimedia.org/wikipedia/commons/c/cf/Ergaki%2C_Mountain_lake_Skazka%2C_Rock_formations%2C_Sayan_Mountains%2C_Russia.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     hiking_trail: [
-        1018,
-        1036,
-        1043,
-        1050,
-        1015,
-        278,
-        253,
-        547,
-        228,
-        607,
-        412,
-        160,
-        603,
-        474,
-        617
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Landscape_during_Laugavegur_hiking_trail_2-CA_reduced.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pirin_-_hiking_trail_from_Vihren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/24/Lady_fern_at_Myrstigen_trail_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/21/Trees_in_ICM_on_Myrstigen_hiking_trail%2C_Brastad_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f8/Babia_G%C3%B3ra%2C_20230304_0651_3162.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Hiking_path_on_the_peninsula_La_Vict%C3%B2ria_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Hiking_path_on_the_peninsula_La_Vict%C3%B2ria_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hiking_trail_to_Biskupsk%C3%A1_kupa%2C_Czechia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/48/Intertwined_roots_of_two_birches_next_to_Myrstigen_hiking_trail_in_Brastad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/29/Hiking_trail_on_Mount_Obidowiec%2C_Gorce%2C_20260103_1214_6780.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     forest: [
-        240,
-        424,
-        15,
-        28,
-        155,
-        167,
-        180,
-        186,
-        195,
-        213
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Hendrik_van_der_Borcht_%28I%29_-_Forest_Landscape_-_WGA02451.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cc/Forest_road_Slavne_2017_BW_G9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Lucas_van_Uden_-_Forest_landscape_with_cows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/Gillis_van_Coninxloo_-_Forest_Landscape_-_38.70_-_Detroit_Institute_of_Arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Forest_Landscape_with_Forest_Workers_and_People_Strolling_%28SM_669%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/1/13/John_William_North_-_Forest_Landscape_-_B2015.18.11_-_Yale_Center_for_British_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/56/Wooden_staircase_steps_in_the_forest_of_Hallasan_Park_Eorimok_Trail_at_dusk_on_Jeju_Island_in_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Thomas_Stuart_Smith_%281813-1814-1869%29_-_Forest_Landscape_-_18002.120_-_Stirling_Smith_Museum_and_Art_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5e/Thomas_Stuart_Smith_%281813-1814-1869%29_-_Forest_Landscape_-_18003.011_-_Stirling_Smith_Museum_and_Art_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     sunset: [
-        334,
-        337,
-        392,
-        399,
-        405,
-        450,
-        468,
-        491,
-        505,
-        558,
-        599
+        "https://upload.wikimedia.org/wikipedia/commons/9/92/Crepuscular_rays_at_Sunset_near_Waterberg_Plateau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b8/Backlit_Margarita_Island_Sunset_in_Las_Guevaras%2C_Venezuela_CaptureNX2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Kitesurfer_at_sunset%2C_Workum%2C_may_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cb/Don_Puay_river_bank_landscape_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/57/Panoramic_sunset_in_Conques_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/96/Sunset_by_Wapta_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Tad_Hang_waterfalls_at_sunset%2C_Tad_Lo_village%2C_Bolaven_Plateau%2C_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2d/Pirogue_running_on_the_Mekong_at_sunset_with_pink_clouds_in_Don_Det_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sunset_near_Great_Sand_Dunes_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/78/Cypress_tree_alley_at_sunset_in_Asciano%2C_Tuscany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     park_outdoor: [
-        10,
-        11,
-        16,
-        17,
-        18,
-        29,
-        36,
-        37,
-        38,
-        41,
-        52,
-        56,
-        68
+        "https://upload.wikimedia.org/wikipedia/commons/0/0a/Central_Park_New_York_City_New_York_23_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/56/Park_City%2C_Utah_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Detailed_map_of_Park_City%2C_Kansas.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/Nara_Park%2C_November_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Park_City_night_sky_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Iconic_view_of_Rostov-on-Don%2C_panorama_of_Rostov-on-Don_city_centre_as_seen_from_Gorky_Park%2C_Rostov-on-Don%2C_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/32/Park_%C5%9Arodula%2C_Sosnowiec%2C_Jesie%C5%84_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/97/Park_City_Utah_-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Park_City_Transit_Bus_658.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Park_at_CityCenter_DC_at_sunset_in_February_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── TRANSPORT ──────────────────────────────────────────────
@@ -301,18 +292,28 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         235
     ],
     airport: [
-        457,
-        35,
-        108,
-        130,
-        221,
-        326
+        "https://upload.wikimedia.org/wikipedia/commons/a/a9/199_-_Buenos_Aires_-_A%C3%A9roport_international_Ezeiza_-_Janvier_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/92/Washington_Dulles_International_Airport_at_Dusk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/04/An_A380_at_Munich_airport%2C_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a3/12-06-05-innsbruck-by-ralfr-164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/Old_Port_Columbus_Airport_Terminal_Historical_Marker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Jet_bridge%2C_Paris-Charles_de_Gaulle_Airport%2C_Roissy_%28SIAE2156%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/45/Berlin_Brandenburg_Airport_Terminal_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ayni_Airport_Terminal_%28Sughd%2C_Tajikistan%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Singapore_Changi_Airport_Terminal_4_%28165259%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/40/Tocumen_International_Airport_alt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     airplane: [
-        7,
-        49,
-        89,
-        247
+        "https://upload.wikimedia.org/wikipedia/commons/e/ef/B17g_and_b52h_in_flight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/65/Patrouille_de_France_Radom_3_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Aeroflot_Airbus_A330_Kustov.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sukhoi_SuperJet_100_%285114478300%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/77/Air-to-air_photo_of_a_Sukhoi_Superjet_100_%2897004%29_over_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Finnish_Air_Force_Hawker_Hurricane_warbird_and_US_Navy_T-6_Texan_warbird_in_flight_over_Finland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/43/20181208_JASDF_F-15C_E-2_formation_flight_Naha_Air_Show_2018-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0a/A_beautiful_sunset_with_the_silhoutte_of_an_airplane_flying_across_the_image_frame.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/1/12/An_airplane_above_Sao_Paulo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/94/Airplane_in_sky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── FOOD & DINING ──────────────────────────────────────────
@@ -364,93 +365,111 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://upload.wikimedia.org/wikipedia/commons/c/c2/Let%27s_dine_out_on_foreign_food_tonight_-_geograph.org.uk_-_1955628.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     breakfast: [
-        225,
-        302,
-        312,
-        431,
-        445,
-        451,
-        506,
-        530,
-        600
+        "https://upload.wikimedia.org/wikipedia/commons/9/93/20200410_100000_Breakfast_with_cereal%2C_pear_and_bilberry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Petit_d%C3%A9jeuner_fran%C3%A7ais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ab/Serbian_Easter_breakfast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Easter_breakfast_in_Serbia_%28close-up%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Breakfast_meal_20210810-FNS-UNC-0019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a1/Breakfast_in_%C3%8Ele_d%27Orl%C3%A9ans_072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Breakfast_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Brisket_breakfast_burrito_from_Buc-ee%27s_-_October_2023_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Breakfast_with_quark_and_nuts_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Breakfast_at_Ikea_Vantaa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── PEOPLE & SOCIAL ────────────────────────────────────────
     friends_group: [
-        306,
-        215,
-        482,
-        339,
-        336,
-        1011,
-        1012
+        "https://upload.wikimedia.org/wikipedia/commons/b/b0/Friends_Group_of_the_Year_Friends_of_Red_River_NWR_%2810591099335%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Friends_Group_of_the_Year_Friends_of_Red_River_NWR_2_%2810591155514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Louise_Breslau_-_A_Portrait-Group_of_Friends.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/31/A_group_of_friends_de_sarah_j_eddy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Group_of_Friends_by_Lovis_Corinth_%281904%29%2C_Albertinum%2C_Dresden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b5/Friends_indian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6b/Group_of_friends_seen_through_iron_railings%2C_Biblioteca_das_Galveias%2C_Lisbon%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/af/Friends_group_picture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a3/A_group_of_friends_on_a_casual_hike.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/de/Crystal_River_Friends_Group_workshop_%284580903829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     party: [
-        512
+        "https://upload.wikimedia.org/wikipedia/commons/2/25/Henri_Rousseau_%28French%29_-_A_Centennial_of_Independence_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dd/Star_Wars_Celebration_III_-_Celebration_party_stage_%284878872618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3e/Star_Wars_Celebration_III_-_Celebration_party_band_%284878870870%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/35/Popovka%2C_Kazantip%2C_Crimea%2C_Sunset_party.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c2/Popovka%2C_Crimea%2C_Kazantip_Festival%2C_Celebration_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/25/Popovka%2C_Crimea%2C_Kazantip_Festival%2C_Celebration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Popovka%2C_Crimea%2C_Kazantip_Festival%2C_Sunset_Party.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/The_Yellow_Fellowship.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3c/Isdera_Autobahnkurier_Classic-Gala_2021_1X7A0228.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     gathering_formal: [
-        372,
-        528,
-        453,
-        60
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/FCN_Photo_Group.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Fursuiters_at_Furry_Unlocked_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Swedish_furries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4f/Furry_Migration%2C_Furry_Convention_Dance_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/55/Furry_Migration%2C_Furry_Convention_Dance_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/1/18/Largest_furry_conventions_by_annual_attendance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/ce/Furry_In_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Matchbox_label_-_Formal_Gathering_-_U.R.S.S_%28circa_1920s%29_-_MBP1628145891.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/06/Furries_at_ConFuzzled_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Golam_Rabbani_at_a_formal_international_gathering.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     crowd: [
-        1027,
-        342,
-        338,
-        66,
-        542,
-        58,
-        74,
-        263
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/2008-04-12_Crowd_touring_Durham.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/44/Walter_Johnson_and_Calvin_Coolidge_shake_hands_FINAL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fa/Neurodiversity_Crowd_1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/85/Christ%27s_Entry_into_Brussels_in_1889.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/85/2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1a/2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Crowd_at_Noam_Rotem_concert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/The_Kaaba_during_Hajj_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Crowd_of_People_at_Ridge%2C_Shimla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── INDOOR / HOME ──────────────────────────────────────────
     home_interior: [
-        365,
-        376,
-        379,
-        271,
-        164,
-        239,
-        354,
-        357,
-        374,
-        377,
-        380,
-        384,
-        385,
-        396,
-        398
+        "https://upload.wikimedia.org/wikipedia/commons/4/41/Living_Room_Interior.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7b/Modern_living_room.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b3/Living_Room_in_Historic_House.jpg"
     ],
     desk_workspace: [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
+        "https://upload.wikimedia.org/wikipedia/commons/2/2d/Coffee-desk-notes-workspace_%2824243718641%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d6/Desk-office-workspace-coworking_%2823699033283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/65/Workspace_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8b/My_new_workspace_%283810862061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1d/Top_Workspace_Office.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3b/Workspace_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Coffee_and_workspace_setup_on_a_desk_during_a_productive_morning_session.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Vintage_turquoise_desk_with_stylish_decor_in_a_cozy_indoor_workspace_filled_with_books_and_a_laptop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/de/Laptop_and_small_plant_on_a_desk_in_a_modern_workspace_during_daylight_hours.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6a/Workspace_setup_with_a_computer_monitor_and_desk_lamp_in_an_office_environment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── STUDY & EDUCATION ──────────────────────────────────────
     campus: [
-        55,
-        61,
-        65,
-        233,
-        244
+        "https://upload.wikimedia.org/wikipedia/commons/d/da/Fietspad_naar_campus_Diepenbeek.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/77/Clifton_Campus_MMB_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a0/Campus_WU_EA_DSC_1571w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/90/McGill_University_downtown_campus_August_2017_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ec/Burns_Building%2C_Lincoln_University_Campus%2C_New_Zealand_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a6/IIT_Mandi_North_Campus_Kandi_Ridge_Nov19_D72_12529.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/A_view_from_the_Back_Campus_of_the_University_of_Toronto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/Campus_of_Ministry_of_Interior_University%2C_Moscow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/58/Lee_University_campus_in_Cleveland%2C_Tennessee_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Lee_University_campus_in_Cleveland%2C_Tennessee_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     classroom: [
-        363,
-        181,
-        176,
-        625,
-        543,
-        143,
-        494,
-        289,
-        64,
-        178
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Andrew_Classroom_De_La_Salle_University.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Grande_salle_ENC_n1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bf/Palamuse_kihelkonnakooli_klassiruum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Empty_classroom_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/62/Reconstructed_classroom%2C_Storer_College.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/90/Online_Classroom_Background.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hanoi_classroom%2C_summer_2003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/76/Classroom_Rules.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dorgah_Madrasah%2C_Dawra_Hadith_classroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f2/Classroom_with_greenchairs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     library: [
         "https://upload.wikimedia.org/wikipedia/commons/c/cd/State_Library_of_Victoria_La_Trobe_Reading_room_5th_floor_view.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -459,26 +478,30 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Toronto_Reference_Library_%2801618%292.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     laptop_study: [
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        48
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Study_Area_in_Peckham_Hall%2C_Nazareth_College%2C_Rochester%2C_NY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/28/20140903_Ukrainian_studies_Cyber_Endeavor_seminars_during_Exercise_Combined_Endeavor_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/af/Cyber-ethnography_Graduate_Anthropology_Students.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6b/University_life.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f3/Laptop_and_girl_biting_pencil-pixabay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/According_to_the_prosecution%27s_investigation%2C_the_contact_information_of_an_Arabic_exchange_student_attending_Hankuk_University_of_Foreign_Studies%2C_which_was_kept_by_Mr._Lee%2C_found_in_suspect_Mr._Lee%27s_laptop.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Study_Areas_on_3rd_Floor_at_the_HCC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Creatividad_y_conocimiento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/ba/JtPhoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/65/In_Zaporizhzhia%2C_the_President_Visited_an_Underground_School_and_Spoke_with_Children_on_December_12%2C_2024_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── MEDICAL ────────────────────────────────────────────────
     clinic: [
-        498,
-        511,
-        500,
-        127,
-        519,
-        539,
-        82,
-        484,
-        550
+        "https://upload.wikimedia.org/wikipedia/commons/4/4a/Garforth_Clinic_-_Lidgett_Lane_-_geograph.org.uk_-_730659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Crenellated_Chiropractic_Clinic_-_geograph.org.uk_-_774768.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/ea/Verwood%2C_clinic_and_vets_-_geograph.org.uk_-_953601.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/Expo_2012_Medical_Clinic_Center.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Acupuncture_clinic%2C_La_Belle_Place%2C_Glasgow_%28geograph_4964139%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/Clinic_in_Exarcheia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bull_Meadow_Clinic%2C_Exeter_-_geograph.org.uk_-_2158081.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/05/A_One_Medical_clinic_in_Bethesda%2C_Maryland_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2c/A_One_Medical_clinic_in_Bethesda%2C_Maryland_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/73/Cruise_Ship_Medical_Reception_Area.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     medicine: [
         "/demo-images/medicine_desk_4_1789837141119.jpg",
@@ -500,36 +523,56 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
 
     // ── SHOPPING ───────────────────────────────────────────────
     mall: [
-        248
+        "https://upload.wikimedia.org/wikipedia/commons/9/96/Melbourne_Old_Post_Office_%28Shopping_Mall_Interior%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/00/Petrovsky_Passage_interior_06-2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a0/CH.ZG.Zug_2024-04-24_Shopping-Mall-Metalli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Entrance_in_Torp_shopping_mall%2C_Uddevalla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f6/Galeria_shopping_mall_interior_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Galeria_shopping_mall_interior_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/Galeria_shopping_mall_interior_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/Galeria_shopping_mall_interior_46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2d/Galeria_shopping_mall_interior_60.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/03/Galeria_shopping_mall_interior_87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     store_products: [
-        202
+        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Retail_grocery_store_shelf_display_of_broad_range_of_food_bars%2C_meal_bars%2C_and_snack_bars-_2013-04-19_14-39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Veganz_Berlin_Vegan_Products_Grocery_Store_Shelf_15592862090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/05/Egg_cartons_on_the_shelf_of_an_IGA_store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Grocery_store_shelf_in_Russia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e2/PORTAL_~_Dominon_shelf_portrait_%28372913%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/75/Empty_grocery_store_shelf_coronavirus_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/38/Nando%27s_peri_peri_sauces_on_a_grocery_store_shelf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/92/Brie_on_a_Shelf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/22/A_shelf_display_of_apples_marked_with_special_prices_at_a_local_grocery_store_in_Palapye%2CBotswana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Shelf_of_ST25_rice_bags_in_Vietnamese_grocery_store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── PETS ───────────────────────────────────────────────────
     pets: [
-        237,
-        1025,
-        169,
-        219,
-        593,
-        417,
-        12,
-        524,
-        297,
-        267,
-        502,
-        177,
-        420,
-        69
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Narrowboat_cat_and_dog_-_geograph.org.uk_-_1772505.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Cat_and_dog_standoff_%283926784260%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/Cute_cat_and_dog_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/58/Cat_and_Dog_Game.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2f/Small_dog_and_cat_2020.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bd/Dog_and_cat_bites.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Cat_and_dog_waiting_for_owner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/97/Cat_and_Dog.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/82/Dog_and_cat%2C_Arco%2C_Madeira.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Cat_and_Dog_in_Vertis_North.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 
     // ── NIGHT ──────────────────────────────────────────────────
     night_city: [
-        1047,
-        1048,
-        274,
-        257
+        "https://upload.wikimedia.org/wikipedia/commons/2/22/New_York_City_at_night_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/52/New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Lower_Manhattan_from_Jersey_City_November_2014_panorama_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f4/Qu%C3%A9bec_city_at_night%2C_view_from_L%C3%A9vis_city.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/72/Ch%C3%A2teau_Frontenac_city_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8b/Price_Building_illuminated_at_night_in_Quebec_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/Chateau_Frontenac_illuminated_at_night_in_Quebec_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lower_Manhattan_from_Jersey_City_September_2020_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/75/Minato_City%2C_Tokyo%2C_Japan_%28Night%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/71/At_New_York_City_2025_001_-_Hudson_Yards_skyline%2C_New_York%2C_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     night_lights: [
         259,
@@ -550,15 +593,28 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
 
     // ── MARKET / FESTIVAL ──────────────────────────────────────
     market_stalls: [
-        96,
-        598,
-        201,
-        104,
-        47,
-        560
+        "https://upload.wikimedia.org/wikipedia/commons/8/89/Market_stall_in_Tachbrook_Street_-_geograph.org.uk_-_1557032.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jedburgh_Easter_Market_2022_sweet_stall_and_stallholder_with_Oisin_behind.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Jedburgh_Easter_Market_2022_prime_cake_stall_and_stallholder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/71/Jedburgh_Easter_Market_2022_calligraphy_stall_and_stallholder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/52/Jedburgh_Easter_Market_2022_street_food_stall_and_stallholder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/7/77/Jedburgh_Easter_Market_2022_High_Street_soap_stall_and_stallholder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f0/Vegetable_stall%2C_Surrey_Street_Market%2C_Croydon_-_geograph.org.uk_-_6286579.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Ornamental_fish_street_market_stall_in_Montevideo_in_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/c/cf/Market_stall_Sclater_Street_Brick_Lane_Market_Shoreditch_London_England_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2b/Market_stall_Sclater_Street_Brick_Lane_Market_Shoreditch_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
     festival: [
-        488
+        "https://upload.wikimedia.org/wikipedia/commons/0/06/Roz_Pappalardo_at_Urban_Country_Music_Festival_2010_Brisbane_AUSTRALIA_May_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kantishna_Valley_Bluegrass_Music_Festival_Denali_Borough_AK_August_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/88/Sabolai_Radio_Music_Festival-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Pattaya_Music_Festival%2C_Girl_dancing_in_the_club.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/Pattaya_Music_Festival%2C_People_in_the_club.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b5/Pattaya_Zoom_Music_Festival%2C_Main_stage_in_lights.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2c/326-056.jpg.Larmer_Tree_Music_Festival_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/Alienstock_2019_Music_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/56/Drift_Jam_-_Flotilla_Music_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/BUCKLE_N_BOOTS_performing_live_at_The_British_Country_Music_Festival_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
     ],
 };
 
@@ -574,7 +630,17 @@ export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 80
     if (usageCount < pool.length) {
         const id = pool[usageCount];
         if (typeof id === 'string') {
-            return { url: id, highUrl: id };
+            let thumbUrl = id;
+            if (id.includes('upload.wikimedia.org/wikipedia/commons/') && !id.includes('/thumb/')) {
+                const parts = id.split('?')[0].split('/');
+                const filename = parts.pop();
+                const hash2 = parts.pop();
+                const hash1 = parts.pop();
+                if (filename && hash1 && hash2) {
+                    thumbUrl = `https://upload.wikimedia.org/wikipedia/commons/thumb/${hash1}/${hash2}/${filename}/800px-${filename}`;
+                }
+            }
+            return { url: thumbUrl, highUrl: id };
         }
         return {
             url: `https://picsum.photos/id/${id}/${w}/${h}`,
