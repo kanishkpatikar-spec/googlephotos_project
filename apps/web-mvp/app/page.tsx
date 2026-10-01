@@ -465,7 +465,7 @@ type UserAlbum = {
 
                                     <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest mb-space-sm">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt={result.semanticCaption as string} src={result.filepath as string} alt={result.semanticCaption as string || ""} />
+                                        <img fetchPriority="high" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt={result.semanticCaption as string} src={result.filepath as string} alt={result.semanticCaption as string || ""} />
                                         {!isTopSearchActive && !result.matchReasons && (
                                             <div className="absolute top-space-xs left-space-xs flex items-center gap-space-xs z-20">
                                                 <span className="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container/90 text-on-secondary font-label-sm text-label-sm shadow-md backdrop-blur-md">
