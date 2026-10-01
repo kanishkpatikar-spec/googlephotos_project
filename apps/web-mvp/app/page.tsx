@@ -8,6 +8,20 @@ import { MemoryAssistPanel } from "../components/MemoryAssistPanel";
 import { MemoryTimeline } from "../components/MemoryTimeline";
 import { CandidateExplanation } from "../components/CandidateExplanation";
 
+const getWikiThumb = (url: string | undefined, width: number) => {
+    if (typeof url !== 'string' || !url.includes('upload.wikimedia.org/wikipedia/commons/')) return url;
+    try {
+        const urlObj = new URL(url);
+        urlObj.search = '';
+        const cleanUrl = urlObj.toString();
+        const match = cleanUrl.match(/commons\/([a-z0-9])\/([a-z0-9]{2})\/([^\/]+)$/i);
+        if (match) {
+            return `https://upload.wikimedia.org/wikipedia/commons/thumb/${match[1]}/${match[2]}/${match[3]}/${width}px-${match[3]}`;
+        }
+    } catch(e) {}
+    return url;
+};
+
 
 // Generate 200 deterministic pseudo-random favorites for the demo to prevent hydration mismatch
 const INITIAL_FAVORITES = new Set<string>();
@@ -418,7 +432,7 @@ type UserAlbum = {
                                 <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
                                     <Image 
                                         alt="" 
-                                        src={typeof result.filepath === 'string' && result.filepath.includes('wikimedia.org') ? `https://wsrv.nl/?url=${encodeURIComponent(result.highResUrl || result.filepath)}&w=1200&q=80` : (result.highResUrl || result.filepath)} 
+                                        src={getWikiThumb(result.highResUrl || result.filepath, 1200)} 
                                         fill 
                                         unoptimized={typeof result.filepath === 'string' && result.filepath.includes('wikimedia.org')}
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
@@ -467,7 +481,7 @@ type UserAlbum = {
                                             fetchPriority="high" 
                                             className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
                                             data-alt={result.semanticCaption as string} 
-                                            src={typeof result.filepath === 'string' && result.filepath.includes('wikimedia.org') ? `https://wsrv.nl/?url=${encodeURIComponent(result.filepath)}&w=800&q=75` : (result.filepath as string)} 
+                                            src={getWikiThumb(result.filepath as string, 800)} 
                                             alt={result.semanticCaption as string || "Memory"} 
                                             fill 
                                             unoptimized={typeof result.filepath === 'string' && result.filepath.includes('wikimedia.org')}
