@@ -630,17 +630,7 @@ export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 80
     if (usageCount < pool.length) {
         const id = pool[usageCount];
         if (typeof id === 'string') {
-            let thumbUrl = id;
-            if (id.includes('upload.wikimedia.org/wikipedia/commons/') && !id.includes('/thumb/')) {
-                const parts = id.split('?')[0].split('/');
-                const filename = parts.pop();
-                const hash2 = parts.pop();
-                const hash1 = parts.pop();
-                if (filename && hash1 && hash2) {
-                    thumbUrl = `https://upload.wikimedia.org/wikipedia/commons/thumb/${hash1}/${hash2}/${filename}/800px-${filename}`;
-                }
-            }
-            return { url: thumbUrl, highUrl: id };
+            return { url: id, highUrl: id };
         }
         return {
             url: `https://picsum.photos/id/${id}/${w}/${h}`,

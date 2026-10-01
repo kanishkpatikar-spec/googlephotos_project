@@ -455,33 +455,33 @@ type UserAlbum = {
                                     onClick={() => setActiveGallery({ images: results.map(r => ({ url: r.highResUrl || r.filepath, title: r.semanticCaption })), currentIndex: idx })}
                                     className="group bg-surface-container-low rounded-xl p-space-sm transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 shadow-2xl flex flex-col justify-between cursor-pointer border border-outline-variant/20 hover:border-primary/50 relative"
                                 >
-                                    {isTopSearchActive && result.matchReasons && (
-                                        <CandidateExplanation 
-                                            matchReasons={result.matchReasons} 
-                                            conflictReasons={result.conflictReasons || []} 
-                                            confidence={result.confidence || 'Medium'} 
-                                        />
-                                    )}
-
-                                    <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest mb-space-sm">
+                                    <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img fetchPriority="high" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt={result.semanticCaption as string} src={result.filepath as string} alt={result.semanticCaption as string || ""} />
+                                        
+                                        {isTopSearchActive && result.matchReasons && (
+                                            <CandidateExplanation 
+                                                matchReasons={result.matchReasons} 
+                                                conflictReasons={result.conflictReasons || []} 
+                                                confidence={result.confidence || 'Medium'} 
+                                            />
+                                        )}
+
                                         {!isTopSearchActive && !result.matchReasons && (
-                                            <div className="absolute top-space-xs left-space-xs flex items-center gap-space-xs z-20">
-                                                <span className="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container/90 text-on-secondary font-label-sm text-label-sm shadow-md backdrop-blur-md">
+                                            <div className="absolute top-2 left-2 flex items-center gap-1 z-20">
+                                                <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-black/70 border border-white/10 text-white text-[10px] font-bold tracking-widest uppercase shadow-md backdrop-blur-md">
                                                     <span className="material-symbols-outlined text-[13px]">verified</span>
-                                                    <span className="">{99 - (idx * 2)}% Match</span>
+                                                    <span>{99 - (idx * 2)}% Match</span>
                                                 </span>
                                             </div>
                                         )}
-
                                     </div>
-                                    <div className="px-space-xs pb-space-xs flex flex-col gap-space-xs">
-                                        <div className="flex items-center justify-between">
-                                            <h3 className="font-headline-sm text-headline-sm text-on-surface truncate">{result.filename}</h3>
-                                            <span className="font-tabular-data text-tabular-data text-on-surface-variant font-medium text-right">{result.timestamp?.split('T')[0]}</span>
+                                    <div className="pt-3 px-1 pb-1 flex flex-col gap-2">
+                                        <div className="flex items-center justify-between gap-3">
+                                            <h3 className="font-headline-sm text-sm text-on-surface truncate flex-1 min-w-0" title={result.filename}>{result.filename}</h3>
+                                            <span className="font-mono text-[11px] text-on-surface-variant bg-white/5 px-2 py-0.5 rounded-md border border-white/5 shrink-0">{result.timestamp?.split('T')[0]}</span>
                                         </div>
-                                        <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                                        <p className="text-[13px] text-on-surface-variant/80 line-clamp-2 leading-relaxed">
                                             {result.semanticCaption || result.description}
                                         </p>
                                     </div>
