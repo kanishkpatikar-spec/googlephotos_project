@@ -12,7 +12,8 @@ export function CandidateExplanation({ matchReasons, conflictReasons, confidence
 
   let confidenceColor = "text-primary bg-black/70 border-primary/30";
   if (confidence === "Good") confidenceColor = "text-[#ffba40] bg-black/70 border-[#ffba40]/30";
-  if (confidence === "Possible" || confidence === "Weak") confidenceColor = "text-error bg-black/70 border-error/30";
+  if (confidence === "Possible" || confidence === "Poor") confidenceColor = "text-error bg-black/70 border-error/30";
+  if (confidence === "Weak" || confidence === "Bad") confidenceColor = "text-error bg-red-950/70 border-red-500/50";
 
   return (
     <div className="absolute top-2 left-2 right-2 z-10 flex flex-col gap-1 pointer-events-auto">

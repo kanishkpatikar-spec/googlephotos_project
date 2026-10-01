@@ -275,8 +275,8 @@ export async function POST(req: NextRequest) {
                 if (objectMatch) reasons.push(`✓ Object: ${matchedObject}`);
 
                 if (hasBoundary) {
-                    semanticScore = semPoints * 0.25; maxScore += 0.25;
-                    sceneScore = scenePoints * 0.10; maxScore += 0.10;
+                    semanticScore = semPoints * 0.45; maxScore += 0.45;
+                    sceneScore = scenePoints * 0.15; maxScore += 0.15;
                     objectScore = objectPoints * 0.10; maxScore += 0.10;
                 } else {
                     semanticScore = semPoints * 0.35; maxScore += 0.35;
@@ -295,20 +295,20 @@ export async function POST(req: NextRequest) {
             if (hasBoundary) {
                 const imgTime = new Date(img.timestamp.value).getTime();
                 if (imgTime >= windowStart && imgTime <= windowEnd) {
-                    boundaryScore = 0.25;
+                    boundaryScore = 0.20;
                     reasons.push(`✓ Within reconstructed time window`);
                 } else {
                     conflicts.push(`✗ Outside chronological boundaries`);
-                    penalty += 0.50;
+                    penalty += 0.60;
                 }
-                maxScore += 0.25;
+                maxScore += 0.20;
 
                 if (boundedEpisodeId) {
                     if (img.episode.episodeId === boundedEpisodeId) {
-                        episodeCoherenceScore = 0.15;
+                        episodeCoherenceScore = 0.10;
                         reasons.push(`✓ Same episode: ${img.episode.episodeName}`);
                     }
-                    maxScore += 0.15;
+                    maxScore += 0.10;
                 }
             }
 
@@ -362,10 +362,20 @@ export async function POST(req: NextRequest) {
         }
 
         const formattedResults = finalResults.map((c) => {
-            let confidence = "Weak";
-            if (c.score >= 0.72) confidence = "Strong";
-            else if (c.score >= 0.55) confidence = "Good";
-            else if (c.score >= 0.38) confidence = "Possible";
+            let confidence = "Bad";
+            if (c.score >= 0.80) {
+                confidence = "Strong";
+                c.reasons.unshift(`✓ Strong Match: Excellent visual and timeline correlation`);
+            } else if (c.score >= 0.55) {
+                confidence = "Good";
+                c.reasons.unshift(`✓ Good Match: Good partial match with clues`);
+            } else if (c.score >= 0.35) {
+                confidence = "Poor";
+                c.conflicts.unshift(`✗ Poor Match: Weak visual match or missing context`);
+            } else {
+                confidence = "Bad";
+                c.conflicts.unshift(`✗ Bad Match: Barely matches the search criteria`);
+            }
 
             return {
                 // Spread the image record for backward compatibility
@@ -386,7 +396,7 @@ export async function POST(req: NextRequest) {
                 matchReasons: c.reasons,
                 conflictReasons: c.conflicts,
                 confidence,
-                semanticCaption: c.reasons[0] || `Match score: ${(c.score * 100).toFixed(0)}%`,
+                semanticCaption: c.reasons[1] || c.reasons[0] || `Match score: ${(c.score * 100).toFixed(0)}%`,
                 debugScore: c.score,
                 debugBreakdown: c.breakdown
             };
