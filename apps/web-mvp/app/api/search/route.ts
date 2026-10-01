@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { mockDatabase, EventRecord } from "../../../lib/mock-database";
 import Groq from "groq-sdk";
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+// Provide a dummy key during build time to prevent Groq from crashing Next.js static analysis
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || "dummy_key_for_build" });
 
 // ── EXPANDED TAXONOMY ──────────────────────────────────────────
 // Covers all 12 episodes' vocabulary for synonym expansion.
