@@ -3,7 +3,10 @@ FROM node:20-slim AS builder
 
 WORKDIR /app
 
-# Copy the monorepo root package.json (needed for workspace resolution)
+# The APP_NAME arg determines which workspace to build.
+# Default to web-mvp, but Railway can override it using build args.
+ARG APP_NAME=web-mvp
+
 COPY package.json ./
 
 # Copy ALL workspace package.json files so npm can resolve the workspace graph
@@ -12,15 +15,14 @@ COPY apps/web-discovery/package.json ./apps/web-discovery/
 COPY packages/core/package.json ./packages/core/
 COPY packages/db/package.json ./packages/db/
 
-# Fresh npm install on Linux — no lockfile from Windows, no cached node_modules
-# This ensures lightningcss-linux-x64-gnu is properly resolved and installed
+# Fresh npm install on Linux 
 RUN npm install
 
 # Copy the full source code
 COPY . .
 
-# Build only the web-mvp app
-RUN npm run build --workspace=apps/web-mvp
+# Build the specified app
+RUN npm run build --workspace=apps/${APP_NAME}
 
 # ---- Production stage ----
 FROM node:20-slim AS runner
@@ -29,9 +31,14 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
+# Re-declare ARG in this stage so we can use it
+ARG APP_NAME=web-mvp
+ENV APP_NAME=${APP_NAME}
+
 # Copy everything from builder (node_modules, built app, configs)
 COPY --from=builder /app ./
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start", "--workspace=apps/web-mvp"]
+# Start the dynamically chosen app
+CMD npm run start --workspace=apps/${APP_NAME}
