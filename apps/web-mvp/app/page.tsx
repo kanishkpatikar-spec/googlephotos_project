@@ -710,8 +710,7 @@ type UserAlbum = {
                                                             </button>
                                                         </div>
 
-                                                        <div className={`absolute inset-0 pointer-events-none bg-gradient-to-t from-black/80 via-black/10 to-transparent transition-opacity flex items-end justify-between p-2 ${activeFilter === 'trash' || selectedPhotos.has(photo.id) ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
-                                                            {activeFilter !== 'trash' && <span className="text-white font-label-sm text-label-sm truncate pointer-events-auto">{photo.title}</span>}
+                                                        <div className={`absolute inset-0 pointer-events-none bg-gradient-to-t from-black/80 via-black/10 to-transparent transition-opacity flex items-end justify-end p-2 ${activeFilter === 'trash' || selectedPhotos.has(photo.id) ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                                                             <div className="flex items-center gap-1 pointer-events-auto">
                                                                 {activeFilter !== 'trash' && (
                                                                     <button 
