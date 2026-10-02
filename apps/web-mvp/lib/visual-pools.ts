@@ -20,7 +20,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1551776235-dde6d482980a?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=600&fit=crop",
@@ -181,7 +180,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1525874684015-58379d421a52?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1500930287596-c1ecaa210c06?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop",
@@ -286,7 +284,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
     ],
     forest: [
         "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1440342359743-84fcb8c21c7c?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&h=600&fit=crop",
@@ -374,14 +371,12 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
 
     // ── TRANSPORT ─────────────────────────────────────────────────
     car_road: [
-        "https://images.unsplash.com/photo-1449965408869-ebd13bc9e5a8?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1549317661-bd32c8ce0ffe?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=800&h=600&fit=crop",
@@ -389,6 +384,23 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1516089339943-7f72f0dbbc5e?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1517409279589-d91012586071?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1506509616086-444747eb1923?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1555589088-348ea618dd2d?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1516089339943-7f72f0dbbc5e?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop",
+        "https://upload.wikimedia.org/wikipedia/commons/0/03/TAXI.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/3/35/View_of_parked_cars_crowding_Pine_Street_at_Broadway_in_Long_Beach%2C_ca.1925.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6c/Car_park_and_Traffic_Street_-_geograph.org.uk_-_8119229.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fa/CabLook_Taxi_Cab.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/Suzuki_Ertiga_XL7_Taxi_Cab.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/Chrysler_of_Yellow_cab_on_Universal_Studios_Japan.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/b/ba/Cars_waiting_at_the_traffic_lights_on_James_Street%2C_Omagh_-_geograph.org.uk_-_6507360.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/2/28/Traffic_on_Marston_Road%2C_Tockwith_-_geograph.org.uk_-_2306222.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/New-York-City-Taxi-Medallion.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        "https://upload.wikimedia.org/wikipedia/commons/6/65/Yellow_cab_on_Times_Square_Manhattan_-_New_York_City.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
         "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&h=600&fit=crop",
@@ -434,7 +446,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop"
     ],
     highway: [
-        "https://images.unsplash.com/photo-1504550988152-5ced891c8b4c?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1515876305430-f06edab8282a?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1534996858221-380b92700493?w=800&h=600&fit=crop",
@@ -491,7 +502,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop"
     ],
     airport: [
-        "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800&h=600&fit=crop",
@@ -507,7 +517,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=800&h=600&fit=crop"
     ],
     airplane: [
-        "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=800&h=600&fit=crop",
@@ -648,7 +657,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1506869640319-fe1a24fd76cb?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop",
@@ -806,7 +814,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
     ],
     campus: [
         "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&h=600&fit=crop",
@@ -834,7 +841,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop",
@@ -1059,7 +1065,6 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1465056836900-8f1e940f2114?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=800&h=600&fit=crop",
