@@ -20,7 +20,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body-md text-body-md text-on-surface bg-[#090710]">
-        <header className="fixed top-0 left-0 right-0 h-16 z-50 bg-[#090710]/80 backdrop-blur-lg border-b border-white/5">
+        <header className="fixed top-0 left-0 right-0 h-16 z-50">
           <div className="h-16 w-full max-w-[1800px] mx-auto px-6 flex items-center justify-between gap-space-md">
             <div className="flex items-center gap-space-lg">
               <div className="flex items-center gap-space-sm cursor-pointer select-none">
