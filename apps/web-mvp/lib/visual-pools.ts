@@ -465,10 +465,9 @@ export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 60
     const usageCount = poolUsage[poolName] || 0;
     poolUsage[poolName] = usageCount + 1;
 
-    // Deterministically scatter the sequence using the global index
-    // This prevents images from the same pool clustering together
-    // Multiplying by a large prime (137) and adding poolName length ensures different categories shuffle differently
-    const hash = (index * 137 + poolName.length * 19 + usageCount) % pool.length;
+    // Simply step through the pool sequentially based on usage count
+    // This ensures EVERY image in the pool is used before any repetition occurs
+    const hash = usageCount % pool.length;
     let id = pool[hash];
 
     // Determine how many times we've cycled through the pool's entire length
