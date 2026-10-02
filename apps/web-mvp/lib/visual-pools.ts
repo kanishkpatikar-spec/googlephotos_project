@@ -940,34 +940,19 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&h=600&fit=crop",   // stethoscope
         "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&h=600&fit=crop",   // medical team
         "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop",   // waiting room
-        "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&h=600&fit=crop",   // documents // from documents
-        "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",   // papers // from documents
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",   // receipts // from documents
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",   // signing papers // from documents
     ],
     medicine: [
-        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop",   // hospital hallway // from clinic
-        "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&h=600&fit=crop",   // doctor office // from clinic
-        "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop",   // hospital room // from clinic
-        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&h=600&fit=crop",   // stethoscope // from clinic
-        "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&h=600&fit=crop",   // medical team // from clinic
-        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop",   // waiting room // from clinic
-        "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&h=600&fit=crop",   // documents // from documents
-        "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",   // papers // from documents
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",   // receipts // from documents
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",   // signing papers // from documents
+        "/demo-images/medicine_desk_1_1789837098828.jpg",
+        "/demo-images/medicine_desk_2_1789837113073.jpg",
+        "/demo-images/medicine_desk_3_1789837128011.jpg",
+        "/demo-images/medicine_desk_4_1789837141119.jpg",
+        "/demo-images/medicine_desk_5_1789837212512.jpg",
     ],
     documents: [
         "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&h=600&fit=crop",   // documents
         "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop",   // papers
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",   // receipts
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",   // signing papers
-        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop",   // hospital hallway // from clinic
-        "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&h=600&fit=crop",   // doctor office // from clinic
-        "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop",   // hospital room // from clinic
-        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&h=600&fit=crop",   // stethoscope // from clinic
-        "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&h=600&fit=crop",   // medical team // from clinic
-        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop",   // waiting room // from clinic
     ],
 
     // ── RETAIL / MARKET ───────────────────────────────────────────
@@ -1177,7 +1162,7 @@ export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 60
         'airport': 'flight_group', 'airplane': 'flight_group',
         'friends_group': 'people_group', 'party': 'people_group', 'gathering_formal': 'people_group', 'crowd': 'people_group',
         'campus': 'school_group', 'classroom': 'school_group', 'library': 'school_group', 'laptop_study': 'school_group',
-        'clinic': 'medical_group', 'medicine': 'medical_group', 'documents': 'medical_group',
+        'clinic': 'medical_group', 'documents': 'medical_group',
         'buildings': 'city_group', 'landmark': 'city_group', 'night_city': 'city_group', 'night_lights': 'city_group',
         'mall': 'shopping_group', 'store_products': 'shopping_group', 'market_stalls': 'shopping_group'
     };
