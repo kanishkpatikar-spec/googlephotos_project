@@ -23,9 +23,9 @@ export default function RootLayout({
         <header className="fixed top-0 left-0 right-0 h-16 z-50">
           <div className="h-16 w-full max-w-[1800px] mx-auto px-6 flex items-center justify-between gap-space-md">
             <div className="flex items-center gap-space-lg">
-              <div className="flex items-center gap-space-sm cursor-pointer select-none">
-                <span className="material-symbols-outlined text-primary text-[24px]">flare</span>
-                <span className="font-headline-sm text-headline-sm tracking-widest uppercase text-white font-semibold">Lumina</span>
+              <div className="flex items-center gap-3 cursor-pointer select-none">
+                <span className="material-symbols-outlined text-primary text-[36px]">lens_blur</span>
+                <span className="font-headline-sm text-2xl tracking-[0.2em] uppercase text-white font-semibold mt-1">Lumina</span>
               </div>
             </div>
             <div className="flex items-center gap-space-md">
