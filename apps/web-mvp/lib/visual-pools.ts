@@ -110,10 +110,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",   // Indian street
         "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&h=600&fit=crop",   // European town
         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop",   // London bridge
-        "https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?w=800&h=600&fit=crop",   // highway straight // from highway
         "https://images.unsplash.com/photo-1515876305430-f06edab8282a?w=800&h=600&fit=crop",   // highway sunset // from highway
-        "https://images.unsplash.com/photo-1534996858221-380b92700493?w=800&h=600&fit=crop",   // desert road // from highway
-        "https://images.unsplash.com/photo-1545165375-1b744b9ed444?w=800&h=600&fit=crop",   // mountain highway // from highway
         "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&h=600&fit=crop",   // winding highway // from highway
         "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&h=600&fit=crop",   // coastal highway // from highway
         "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop",   // adventure highway // from highway
@@ -443,10 +440,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",   // nature drive
         "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",   // Udaipur lake
         "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",   // India Gate road
-        "https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?w=800&h=600&fit=crop",   // highway straight // from highway
         "https://images.unsplash.com/photo-1515876305430-f06edab8282a?w=800&h=600&fit=crop",   // highway sunset // from highway
-        "https://images.unsplash.com/photo-1534996858221-380b92700493?w=800&h=600&fit=crop",   // desert road // from highway
-        "https://images.unsplash.com/photo-1545165375-1b744b9ed444?w=800&h=600&fit=crop",   // mountain highway // from highway
         "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&h=600&fit=crop",   // winding highway // from highway
         "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&h=600&fit=crop",   // coastal highway // from highway
         "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop",   // adventure highway // from highway
@@ -462,10 +456,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop",   // London bridge // from city_street
     ],
     highway: [
-        "https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?w=800&h=600&fit=crop",   // highway straight
         "https://images.unsplash.com/photo-1515876305430-f06edab8282a?w=800&h=600&fit=crop",   // highway sunset
-        "https://images.unsplash.com/photo-1534996858221-380b92700493?w=800&h=600&fit=crop",   // desert road
-        "https://images.unsplash.com/photo-1545165375-1b744b9ed444?w=800&h=600&fit=crop",   // mountain highway
         "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&h=600&fit=crop",   // winding highway
         "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&h=600&fit=crop",   // coastal highway
         "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop",   // adventure highway
@@ -1175,8 +1166,25 @@ const poolUsage: Record<string, number> = {};
 export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 600): { url: string; highUrl: string } {
     const pool = VISUAL_POOLS[poolName] || VISUAL_POOLS['landscape'];
     
-    const usageCount = poolUsage[poolName] || 0;
-    poolUsage[poolName] = usageCount + 1;
+    // Group semantically merged pools to share the same counter
+    // This prevents different events of the same group from repeating the same sequence starting at index 0
+    const groupMap: Record<string, string> = {
+        'highway': 'road_group', 'car_road': 'road_group', 'city_street': 'road_group',
+        'forest': 'nature_group', 'hiking_trail': 'nature_group', 'mountain': 'nature_group', 'park_outdoor': 'nature_group', 'landscape': 'nature_group',
+        'beach': 'water_group', 'ocean': 'water_group',
+        'cafe': 'dining_group', 'restaurant': 'dining_group', 'food': 'dining_group', 'breakfast': 'dining_group',
+        'hotel_room': 'hotel_group', 'home_interior': 'hotel_group', 'hotel_exterior': 'hotel_group',
+        'airport': 'flight_group', 'airplane': 'flight_group',
+        'friends_group': 'people_group', 'party': 'people_group', 'gathering_formal': 'people_group', 'crowd': 'people_group',
+        'campus': 'school_group', 'classroom': 'school_group', 'library': 'school_group', 'laptop_study': 'school_group',
+        'clinic': 'medical_group', 'medicine': 'medical_group', 'documents': 'medical_group',
+        'buildings': 'city_group', 'landmark': 'city_group', 'night_city': 'city_group', 'night_lights': 'city_group',
+        'mall': 'shopping_group', 'store_products': 'shopping_group', 'market_stalls': 'shopping_group'
+    };
+    
+    const counterKey = groupMap[poolName] || poolName;
+    const usageCount = poolUsage[counterKey] || 0;
+    poolUsage[counterKey] = usageCount + 1;
 
     // Simply step through the pool sequentially based on usage count
     // This ensures EVERY image in the pool is used before any repetition occurs
