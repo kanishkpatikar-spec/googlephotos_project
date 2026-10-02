@@ -23,7 +23,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",   // elegant suite
         "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop",   // hotel interior
         "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop",   // resort room
-        "https://images.unsplash.com/photo-1551776235-dde6d482980a?w=800&h=600&fit=crop",   // warm room
+        "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800&h=600&fit=crop",   // warm room
     ],
     hotel_exterior: [
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",   // resort exterior
@@ -42,7 +42,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=800&h=600&fit=crop",   // clear water beach
         "https://images.unsplash.com/photo-1520454974749-611b7248ffdb?w=800&h=600&fit=crop",   // sunset beach
         "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=800&h=600&fit=crop",   // coastal cliff
-        "https://images.unsplash.com/photo-1509233725247-49e657c54f32?w=800&h=600&fit=crop",   // Goa-style beach
+        "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=800&h=600&fit=crop",   // Goa-style beach
         "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop",   // boats on shore
     ],
     ocean: [
@@ -62,7 +62,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&h=600&fit=crop",   // night street
         "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&h=600&fit=crop",   // downtown
         "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&h=600&fit=crop",   // urban night
-        "https://images.unsplash.com/photo-1567449303078-57ad995bd329?w=800&h=600&fit=crop",   // Indian street
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",   // Indian street
         "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&h=600&fit=crop",   // European town
         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop",   // London bridge
     ],
@@ -83,7 +83,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1525874684015-58379d421a52?w=800&h=600&fit=crop",   // Colosseum
         "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=800&h=600&fit=crop",   // London
         "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop",   // Taj Mahal
-        "https://images.unsplash.com/photo-1500930287596-c1ecaa210c06?w=800&h=600&fit=crop",   // monument
+        "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&h=600&fit=crop",   // monument
         "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=600&fit=crop",   // Paris
         "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop",   // Taj Mahal front
         "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=800&h=600&fit=crop",   // Gateway of India
@@ -113,7 +113,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
     ],
     forest: [
         "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=600&fit=crop",   // deep forest
-        "https://images.unsplash.com/photo-1440342359743-84fcb8c21c7c?w=800&h=600&fit=crop",   // green woods
+        "https://images.unsplash.com/photo-1511497584788-876760111969?w=800&h=600&fit=crop",   // green woods
         "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800&h=600&fit=crop",   // tall trees
         "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&h=600&fit=crop",   // autumn forest
         "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&h=600&fit=crop",   // sunlit forest
@@ -127,7 +127,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?w=800&h=600&fit=crop",   // sunset sky
         "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",   // field sunset
         "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=800&h=600&fit=crop",   // purple sunset
-        "https://images.unsplash.com/photo-1472120435266-95a3f747eb08?w=800&h=600&fit=crop",   // mountain sunset
+        "https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=800&h=600&fit=crop",   // mountain sunset
         "https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=800&h=600&fit=crop",   // lake sunset
     ],
     park_outdoor: [
@@ -137,14 +137,14 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=800&h=600&fit=crop",   // green park
         "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop",   // rolling hills
         "https://images.unsplash.com/photo-1516214104703-d870798883c5?w=800&h=600&fit=crop",   // flower garden
-        "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop",   // botanical garden
+        "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&h=600&fit=crop",   // botanical garden
         "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&h=600&fit=crop",   // Japanese garden
     ],
 
     // ── TRANSPORT (HUGE VARIETY - used 6 times!) ──────────────────
     car_road: [
         "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",   // road trip scenic
-        "https://images.unsplash.com/photo-1449965408869-ebd13bc9e5a8?w=800&h=600&fit=crop",   // desert highway
+        "https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=800&h=600&fit=crop",   // desert highway
         "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=800&h=600&fit=crop",   // coastal road
         "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&h=600&fit=crop",   // mountain road
         "https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?w=800&h=600&fit=crop",   // city taxi
@@ -170,12 +170,12 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800&h=600&fit=crop",   // tropical travel
         "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop",   // scenic vista
         "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",   // morning fog road
-        "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop",   // garden arrival
+        "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",   // garden arrival
         "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&h=600&fit=crop",   // Italian coast
         "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?w=800&h=600&fit=crop",   // Rajasthan desert road
         "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=800&h=600&fit=crop",   // mountain valley road
         "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop",   // Kerala India
-        "https://images.unsplash.com/photo-1465056836900-8f1e940f2114?w=800&h=600&fit=crop",   // Swiss valley drive
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",   // Swiss valley drive
         "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop",   // adventure travel
         "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&h=600&fit=crop",   // golden hour drive
         "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop",   // camping road trip
@@ -187,7 +187,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",   // India Gate road
     ],
     highway: [
-        "https://images.unsplash.com/photo-1504550988152-5ced891c8b4c?w=800&h=600&fit=crop",   // highway straight
+        "https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?w=800&h=600&fit=crop",   // highway straight
         "https://images.unsplash.com/photo-1515876305430-f06edab8282a?w=800&h=600&fit=crop",   // highway sunset
         "https://images.unsplash.com/photo-1499244571948-7ccddb3583f1?w=800&h=600&fit=crop",   // long highway
         "https://images.unsplash.com/photo-1534996858221-380b92700493?w=800&h=600&fit=crop",   // desert road
@@ -197,7 +197,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop",   // adventure highway
     ],
     airport: [
-        "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&h=600&fit=crop",   // airport terminal
+        "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=600&fit=crop",   // airport terminal
         "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=600&fit=crop",   // departure gate
         "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&h=600&fit=crop",   // airport lobby
         "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800&h=600&fit=crop",   // check-in counter
@@ -207,7 +207,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?w=800&h=600&fit=crop",   // boarding pass
     ],
     airplane: [
-        "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&h=600&fit=crop",   // airplane window
+        "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&h=600&fit=crop",   // airplane window
         "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&h=600&fit=crop",   // sky view
         "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=800&h=600&fit=crop",   // plane wing
         "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=800&h=600&fit=crop",   // airplane cabin
@@ -268,7 +268,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop",   // friends walking
         "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop",   // beach group
         "https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=800&h=600&fit=crop",   // selfie group
-        "https://images.unsplash.com/photo-1506869640319-fe1a24fd76cb?w=800&h=600&fit=crop",   // friends outdoor
+        "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&h=600&fit=crop",   // friends outdoor
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",   // team working
         "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&h=600&fit=crop",   // friends party
         "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop",   // graduation group
@@ -326,7 +326,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
     ],
     campus: [
         "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop",   // graduation
-        "https://images.unsplash.com/photo-1523050854058-8df90110c476?w=800&h=600&fit=crop",   // campus lawn
+        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop",   // campus lawn
         "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop",   // university building
         "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&h=600&fit=crop",   // campus walkway
         "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&h=600&fit=crop",   // students
@@ -423,7 +423,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=600&fit=crop",   // dogs playing
         "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&h=600&fit=crop",   // dog outdoors
         "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&h=600&fit=crop",   // orange cat
-        "https://images.unsplash.com/photo-1425082661507-f5e3e97c59d7?w=800&h=600&fit=crop",   // street dog India
+        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&h=600&fit=crop",   // street dog India
     ],
 
     // ── NIGHT ─────────────────────────────────────────────────────
@@ -450,7 +450,7 @@ export const VISUAL_POOLS: Record<string, (number | string)[]> = {
         "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",   // countryside
         "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop",   // aerial green
         "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&h=600&fit=crop",   // waterfall
-        "https://images.unsplash.com/photo-1465056836900-8f1e940f2114?w=800&h=600&fit=crop",   // Swiss hills
+        "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=600&fit=crop",   // Swiss hills
         "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",   // Himalayan valley
         "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?w=800&h=600&fit=crop",   // Munnar tea fields India
     ],
@@ -465,8 +465,11 @@ export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 60
     const usageCount = poolUsage[poolName] || 0;
     poolUsage[poolName] = usageCount + 1;
 
-    // Wrap around to guarantee semantic accuracy — never use random seeds
-    const id = pool[usageCount % pool.length];
+    // Deterministically scatter the sequence using the global index
+    // This prevents images from the same pool clustering together
+    // Multiplying by a large prime (137) and adding poolName length ensures different categories shuffle differently
+    const hash = (index * 137 + poolName.length * 19 + usageCount) % pool.length;
+    const id = pool[hash];
     if (typeof id === 'string') {
         // For Unsplash URLs, create a higher-res version for lightbox
         const highUrl = typeof id === 'string' && id.includes('unsplash.com')
