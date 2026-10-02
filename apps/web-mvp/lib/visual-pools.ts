@@ -469,7 +469,22 @@ export function getPoolImageUrl(poolName: string, index: number, w = 800, h = 60
     // This prevents images from the same pool clustering together
     // Multiplying by a large prime (137) and adding poolName length ensures different categories shuffle differently
     const hash = (index * 137 + poolName.length * 19 + usageCount) % pool.length;
-    const id = pool[hash];
+    let id = pool[hash];
+
+    // Determine how many times we've cycled through the pool's entire length
+    const cycle = Math.floor(usageCount / pool.length);
+    
+    if (cycle > 0 && typeof id === 'string' && id.includes('unsplash.com')) {
+        // Apply deterministic visual transformations (zoom, crop, flip) on repeated images
+        // This ensures the library appears to have 700+ unique images without losing semantic accuracy
+        if (cycle === 1) id += "&flip=h";
+        else if (cycle === 2) id += "&crop=focalpoint&fp-x=0.4&fp-y=0.6&fp-z=1.2";
+        else if (cycle === 3) id += "&crop=focalpoint&fp-x=0.6&fp-y=0.4&fp-z=1.2&flip=h";
+        else if (cycle === 4) id += "&crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-z=1.3";
+        else if (cycle === 5) id += "&crop=focalpoint&fp-x=0.2&fp-y=0.8&fp-z=1.3&flip=h";
+        else id += `&crop=focalpoint&fp-x=${(hash % 10) / 10}&fp-y=${(cycle % 10) / 10}&fp-z=${1.1 + (cycle % 4) * 0.1}`;
+    }
+
     if (typeof id === 'string') {
         // For Unsplash URLs, create a higher-res version for lightbox
         const highUrl = typeof id === 'string' && id.includes('unsplash.com')
