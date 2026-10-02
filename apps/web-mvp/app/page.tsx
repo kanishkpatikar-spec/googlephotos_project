@@ -193,7 +193,7 @@ type UserAlbum = {
 
     return { grouped, flatPhotos: activePhotos };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [localQuery, activeFilter, favorites]);
+  }, [localQuery, activeFilter, favorites, userAlbums]);
 
 
 
@@ -784,10 +784,7 @@ type UserAlbum = {
                   <div className="pointer-events-auto flex items-center gap-2">
                       {activeFilter !== 'trash' && (
                           <>
-                              <button className="p-2 rounded-full hover:bg-white/10 transition-colors" title="Share"><span className="material-symbols-outlined text-[20px]">share</span></button>
-                              <button className="p-2 rounded-full hover:bg-white/10 transition-colors" title="Edit"><span className="material-symbols-outlined text-[20px]">tune</span></button>
-                              <button className="p-2 rounded-full hover:bg-white/10 transition-colors" title="Zoom"><span className="material-symbols-outlined text-[20px]">zoom_in</span></button>
-                              <button className="p-2 rounded-full hover:bg-white/10 transition-colors" title="Info"><span className="material-symbols-outlined text-[20px]">info</span></button>
+
                               <button onClick={() => {
                                   if (userAlbums.length === 0) {
                                       setPhotoToAddAfterAlbumCreation(activeGallery.images[activeGallery.currentIndex].id);
