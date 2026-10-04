@@ -297,16 +297,36 @@ type UserAlbum = {
         </aside>
 
         {/* Main Content */}
-        <div className="flex-1 flex flex-col items-center pt-8 pb-8 pl-6 pr-[100px] overflow-hidden relative">
+        <div className="flex-1 flex flex-col items-center pt-4 md:pt-8 pb-4 md:pb-8 px-4 md:pl-6 md:pr-[100px] overflow-hidden relative">
+
+        {/* Mobile Navigation (Horizontal) */}
+        <div className="flex md:hidden w-full overflow-x-auto scrollbar-hide gap-2 pb-4 mb-4 border-b border-white/10 shrink-0">
+            <button onClick={() => setActiveFilter('all')} className={`flex items-center gap-2 px-4 py-2 rounded-full whitespace-nowrap transition-all ${activeFilter === 'all' ? 'bg-primary/15 text-primary font-medium border border-primary/30' : 'bg-surface-container-low text-on-surface-variant border border-white/5'}`}>
+                <span className="material-symbols-outlined text-[18px]">photo_library</span>
+                Photos
+            </button>
+            <button onClick={() => setActiveFilter('favorites')} className={`flex items-center gap-2 px-4 py-2 rounded-full whitespace-nowrap transition-all ${activeFilter === 'favorites' ? 'bg-primary/15 text-primary font-medium border border-primary/30' : 'bg-surface-container-low text-on-surface-variant border border-white/5'}`}>
+                <span className="material-symbols-outlined text-[18px]">star</span>
+                Favorites
+            </button>
+            <button onClick={() => setActiveFilter('albums')} className={`flex items-center gap-2 px-4 py-2 rounded-full whitespace-nowrap transition-all ${activeFilter === 'albums' || activeFilter.startsWith('album_') ? 'bg-primary/15 text-primary font-medium border border-primary/30' : 'bg-surface-container-low text-on-surface-variant border border-white/5'}`}>
+                <span className="material-symbols-outlined text-[18px]">photo_album</span>
+                Albums
+            </button>
+            <button onClick={() => setActiveFilter('trash')} className={`flex items-center gap-2 px-4 py-2 rounded-full whitespace-nowrap transition-all ${activeFilter === 'trash' ? 'bg-error/15 text-error font-medium border border-error/30' : 'bg-surface-container-low text-on-surface-variant border border-white/5'}`}>
+                <span className="material-symbols-outlined text-[18px]">delete</span>
+                Trash
+            </button>
+        </div>
 
         {/* Floating Multi-Selection Action Bar */}
         {selectedPhotos.size > 0 && (
-            <div className="fixed bottom-12 left-1/2 -translate-x-1/2 z-[200] flex items-center justify-between gap-8 px-6 py-3 bg-[#1a1b26]/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] rounded-full animate-in slide-in-from-bottom-10">
-                <div className="flex items-center gap-4 pl-2">
+            <div className="fixed bottom-12 left-1/2 -translate-x-1/2 z-[200] flex items-center justify-between gap-4 md:gap-8 px-4 md:px-6 py-3 bg-[#1a1b26]/90 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] rounded-full animate-in slide-in-from-bottom-10 w-[90%] md:w-auto max-w-lg">
+                <div className="flex items-center gap-2 md:gap-4 pl-1 md:pl-2">
                     <button onClick={() => setSelectedPhotos(new Set())} className="p-1.5 rounded-full hover:bg-white/10 text-on-surface transition-colors flex items-center justify-center">
                         <span className="material-symbols-outlined text-[20px]">close</span>
                     </button>
-                    <span className="text-white font-medium whitespace-nowrap">{selectedPhotos.size} selected</span>
+                    <span className="text-white font-medium whitespace-nowrap text-sm md:text-base">{selectedPhotos.size} selected</span>
                 </div>
                 <div className="flex items-center gap-1 bg-black/20 rounded-full px-2 py-1">
                     {activeFilter === 'trash' ? (
@@ -385,7 +405,7 @@ type UserAlbum = {
 
 
         {/* Scrollable Image Library Container */}
-        <div className="w-full flex-1 min-h-0 overflow-y-auto overflow-x-hidden border border-white/10 rounded-3xl bg-white/[0.02] shadow-inner px-8 py-6 custom-scrollbar relative">
+        <div className="w-full flex-1 min-h-0 overflow-y-auto overflow-x-hidden border border-white/10 rounded-3xl bg-white/[0.02] shadow-inner px-4 md:px-8 py-4 md:py-6 custom-scrollbar relative">
             {/* Results OR Massive Default Library Grid */}
             {results.length > 0 ? (
             <div className="w-full mt-8">
@@ -457,7 +477,7 @@ type UserAlbum = {
                             </div>
                         )}
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-space-lg">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-space-lg">
                             {results.map((result, idx) => (
                                 <article 
                                     key={result.id} 
@@ -682,7 +702,7 @@ type UserAlbum = {
                                             {activeFilter !== 'trash' && (
                                                 <h3 className="font-headline-sm text-[15px] text-on-surface-variant mb-3 font-medium">{dateStr}</h3>
                                             )}
-                                            <div className="grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(180px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-2 sm:gap-3">
+                                            <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fill,minmax(180px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-2 sm:gap-3">
                                                 {photos.map((photo) => (
                                                     <div 
                                                         key={photo.id} 
@@ -752,7 +772,7 @@ type UserAlbum = {
       
       {/* Fast Scroll Year Scrubber UI */}
       {results.length === 0 && (
-          <div className="fixed right-0 top-1/2 -translate-y-1/2 flex flex-col gap-1 px-2 py-6 bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_0_30px_rgba(168,199,250,0.15)] rounded-l-3xl transition-all duration-300 z-50">
+          <div className="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 flex-col gap-1 px-2 py-6 bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_0_30px_rgba(168,199,250,0.15)] rounded-l-3xl transition-all duration-300 z-50">
               {ALL_YEARS.map(year => (
                   <button 
                       key={year}
@@ -820,19 +840,19 @@ type UserAlbum = {
               </div>
               
               {/* Invisible Click Zones for Navigation & Chevrons */}
-              <div className="absolute inset-y-0 left-0 w-1/4 z-10 flex items-center justify-start px-4 cursor-pointer" onClick={() => setActiveGallery(prev => prev && prev.currentIndex > 0 ? { ...prev, currentIndex: prev.currentIndex - 1 } : prev)}>
-                  <button className={`w-12 h-12 rounded-full bg-black/40 text-white flex items-center justify-center transition-opacity backdrop-blur-md ${activeGallery.currentIndex > 0 ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="absolute inset-y-0 left-0 w-1/4 z-10 flex items-center justify-start px-2 md:px-4 cursor-pointer" onClick={() => setActiveGallery(prev => prev && prev.currentIndex > 0 ? { ...prev, currentIndex: prev.currentIndex - 1 } : prev)}>
+                  <button className={`w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/40 text-white flex items-center justify-center transition-opacity backdrop-blur-md ${activeGallery.currentIndex > 0 ? 'opacity-100' : 'opacity-0'}`}>
                       <span className="material-symbols-outlined">navigate_before</span>
                   </button>
               </div>
-              <div className="absolute inset-y-0 right-0 w-1/4 z-10 flex items-center justify-end px-4 cursor-pointer" onClick={() => setActiveGallery(prev => prev && prev.currentIndex < prev.images.length - 1 ? { ...prev, currentIndex: prev.currentIndex + 1 } : prev)}>
-                  <button className={`w-12 h-12 rounded-full bg-black/40 text-white flex items-center justify-center transition-opacity backdrop-blur-md ${activeGallery.currentIndex < activeGallery.images.length - 1 ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="absolute inset-y-0 right-0 w-1/4 z-10 flex items-center justify-end px-2 md:px-4 cursor-pointer" onClick={() => setActiveGallery(prev => prev && prev.currentIndex < prev.images.length - 1 ? { ...prev, currentIndex: prev.currentIndex + 1 } : prev)}>
+                  <button className={`w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/40 text-white flex items-center justify-center transition-opacity backdrop-blur-md ${activeGallery.currentIndex < activeGallery.images.length - 1 ? 'opacity-100' : 'opacity-0'}`}>
                       <span className="material-symbols-outlined">navigate_next</span>
                   </button>
               </div>
 
               {/* The Image (Forced to scale via flex-1 and object-contain) */}
-              <div className="flex-1 w-full h-full flex items-center justify-center pt-16 pb-4 px-12 relative">
+              <div className="flex-1 w-full h-full flex items-center justify-center pt-16 pb-4 px-0 md:px-12 relative">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                       key={activeGallery.currentIndex}

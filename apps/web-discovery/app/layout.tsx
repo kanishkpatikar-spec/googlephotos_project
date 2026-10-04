@@ -63,10 +63,22 @@ export default async function RootLayout({
         </header>
         
         <div className="w-full flex-1 pt-16">
-          <main className="w-full h-full">
+          <main className="w-full h-full pb-16 md:pb-0">
             {children}
           </main>
         </div>
+
+        {/* Mobile Navigation */}
+        <nav className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface-container-high/90 backdrop-blur-2xl border-t border-white/10 z-50 flex items-center justify-around px-4">
+          <Link href="/" className="flex flex-col items-center gap-1 text-on-surface-variant hover:text-white">
+            <span className="material-symbols-outlined text-[20px]">dashboard</span>
+            <span className="text-[10px] uppercase tracking-wider font-semibold">Dashboard</span>
+          </Link>
+          <Link href="/evidence" className="flex flex-col items-center gap-1 text-on-surface-variant hover:text-white">
+            <span className="material-symbols-outlined text-[20px]">policy</span>
+            <span className="text-[10px] uppercase tracking-wider font-semibold">Evidence</span>
+          </Link>
+        </nav>
       </body>
     </html>
   )

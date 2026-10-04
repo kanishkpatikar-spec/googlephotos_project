@@ -140,21 +140,21 @@ export default function EvidenceBrowser({ data }: { data: any[] }) {
   }, [data]);
 
   return (
-    <div className="w-[60%] flex flex-col bg-surface border-r border-surface-container/30">
-      <div className="px-10 py-8 bg-surface/80 backdrop-blur-xl flex flex-col justify-center border-b border-white/5 relative overflow-hidden shrink-0 z-20">
+    <div className="w-full h-full flex flex-col bg-surface md:border-r border-surface-container/30">
+      <div className="px-6 md:px-10 py-6 md:py-8 bg-surface/80 backdrop-blur-xl flex flex-col justify-center border-b border-white/5 relative overflow-hidden shrink-0 z-20">
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="relative z-10 flex items-start gap-5">
-          <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 shadow-inner">
-            <span className="material-symbols-outlined text-primary text-[24px]">dataset</span>
+        <div className="relative z-10 flex items-start gap-3 md:gap-5">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 shadow-inner">
+            <span className="material-symbols-outlined text-primary text-[20px] md:text-[24px]">dataset</span>
           </div>
-          <div className="pt-1.5">
-            <h2 className="font-headline-sm text-on-surface tracking-tight leading-none mb-2">Categorized Evidence Logs</h2>
-            <p className="text-sm text-on-surface-variant leading-none">Reviewing {data.length} documented retrieval failure sessions across {Object.keys(groupedData).length} categories</p>
+          <div className="pt-0 md:pt-1.5">
+            <h2 className="font-headline-sm text-base md:text-xl text-on-surface tracking-tight leading-none mb-1 md:mb-2">Categorized Evidence Logs</h2>
+            <p className="text-xs md:text-sm text-on-surface-variant leading-tight">Reviewing {data.length} documented retrieval failure sessions across {Object.keys(groupedData).length} categories</p>
           </div>
         </div>
       </div>
       
-      <div className="flex-1 overflow-y-auto px-10 py-8">
+      <div className="flex-1 overflow-y-auto px-4 md:px-10 py-4 md:py-8">
         {data.length === 0 ? (
           <div className="text-center text-on-surface-variant p-8 italic">
             No evidence available.

@@ -28,13 +28,15 @@ export default async function EvidencePage() {
   const data = await fetchEvidence();
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] max-w-[1600px] mx-auto overflow-hidden">
+    <div className="flex flex-col md:flex-row h-auto md:h-[calc(100vh-4rem)] max-w-[1600px] mx-auto overflow-y-auto md:overflow-hidden pb-16 md:pb-0">
       
       {/* LEFT SIDE: Evidence Browser (60%) */}
-      <EvidenceBrowser data={data} />
+      <div className="w-full md:w-[60%] h-[60vh] md:h-full border-b md:border-b-0 border-white/10 shrink-0">
+        <EvidenceBrowser data={data} />
+      </div>
       
       {/* RIGHT SIDE: Interactive Journey Timeline (40%) */}
-      <div className="w-[40%] bg-surface flex flex-col relative overflow-hidden">
+      <div className="w-full md:w-[40%] h-[70vh] md:h-full bg-surface flex flex-col relative overflow-hidden shrink-0">
         {data.length > 0 ? (
           <JourneyTimeline data={data} />
         ) : (
