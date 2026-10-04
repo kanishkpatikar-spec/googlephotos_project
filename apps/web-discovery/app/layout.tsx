@@ -3,6 +3,7 @@ import "./globals.css"
 import { db, evidenceRecords } from "@/lib/database/client";
 import { sql } from "drizzle-orm";
 import Link from 'next/link';
+import { SessionResetter } from "@/components/SessionResetter";
 
 export const metadata = {
   title: 'Discovery Engine | Photo Retrieval Research',
@@ -33,6 +34,7 @@ export default async function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body-md text-body-md text-on-surface flex flex-col min-h-screen">
+        <SessionResetter />
         
         <header className="absolute top-0 left-0 right-0 h-16 z-50 bg-white/5 backdrop-blur-2xl border-b border-white/10">
           <div className="h-16 w-full px-gutter flex items-center justify-between gap-space-md max-w-[1600px] mx-auto">

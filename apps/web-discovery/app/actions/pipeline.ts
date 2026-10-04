@@ -12,8 +12,8 @@ import crypto from 'crypto';
 // Helper to simulate time delay for UI effect
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
-export async function runPipelineAction() {
-  console.log("Running simulated pipeline from server action using real Supabase data...");
+export async function runPipelineAction(mode: 'full' | 'reset' = 'full') {
+  console.log(`Running simulated pipeline (${mode} mode) from server action using real Supabase data...`);
   
   // 1. Delete existing processed records (cascades)
   await db.delete(evidenceRecords);
@@ -21,8 +21,10 @@ export async function runPipelineAction() {
   // 2. Fetch the real raw evidence from Supabase
   const allRaw = await db.select().from(rawEvidence); // Fetch all items
   
-  // Randomize between 50 and 100 items for this run to keep it fast and dynamic
-  const numToProcess = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+  // Randomize between 50-100 for full pipeline, or 5-10 for initial load reset
+  const numToProcess = mode === 'reset' 
+    ? Math.floor(Math.random() * (10 - 5 + 1)) + 5
+    : Math.floor(Math.random() * (100 - 50 + 1)) + 50;
   
   // Shuffle array and pick subset
   const shuffledRaw = allRaw.sort(() => 0.5 - Math.random()).slice(0, numToProcess);
@@ -35,7 +37,7 @@ export async function runPipelineAction() {
   ];
 
   // Inject a random number of new real-time streams so the metrics fluctuate dynamically for the demo
-  const extraFakesCount = Math.floor(Math.random() * 12); 
+  const extraFakesCount = mode === 'reset' ? 0 : Math.floor(Math.random() * 12); 
   for(let i=0; i<extraFakesCount; i++) {
     rawItems.push({
       id: crypto.randomUUID(), // Mock ID
