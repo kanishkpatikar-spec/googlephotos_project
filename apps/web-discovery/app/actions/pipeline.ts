@@ -21,9 +21,9 @@ export async function runPipelineAction(mode: 'full' | 'reset' = 'full') {
   // 2. Fetch the real raw evidence from Supabase
   const allRaw = await db.select().from(rawEvidence); // Fetch all items
   
-  // Randomize between 50-100 for full pipeline, or 5-10 for initial load reset
+  // Randomize between 50-100 for full pipeline, or fixed 10 for initial load reset
   const numToProcess = mode === 'reset' 
-    ? Math.floor(Math.random() * (10 - 5 + 1)) + 5
+    ? 10
     : Math.floor(Math.random() * (100 - 50 + 1)) + 50;
   
   // Shuffle array and pick subset
@@ -36,8 +36,10 @@ export async function runPipelineAction(mode: 'full' | 'reset' = 'full') {
     { sourcePlatform: 'Google Play', sourceUrl: 'https://play.google.com', rawStatement: "Search is useless. I need a screenshot of a flight ticket booking." }
   ];
 
-  // Inject a random number of new real-time streams so the metrics fluctuate dynamically for the demo
-  const extraFakesCount = mode === 'reset' ? 0 : Math.floor(Math.random() * 12); 
+  // Ensure we have AT LEAST 10 items in reset mode, otherwise randomly add fakes
+  const extraFakesCount = mode === 'reset' 
+    ? Math.max(0, 10 - rawItems.length)
+    : Math.floor(Math.random() * 12); 
   for(let i=0; i<extraFakesCount; i++) {
     rawItems.push({
       id: crypto.randomUUID(), // Mock ID
